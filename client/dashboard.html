@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>mnry.io - dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="header__inner">
+        <div class="toggle js-toggle">
+          <span class="toggle__line toggle__line--top"></span>
+          <span class="toggle__line toggle__line--middle"></span>
+          <span class="toggle__line toggle__line--bottom"></span>
+        </div>
+        <h1 class="page-title">Панель управления</h1>
+        <a href="#" class="logo header__logo">
+          <span class="logo__image svg-logo"></span>
+        </a>
+        <div class="menu js-menu">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="dashboard.html" class="navigation__link link navigation__link--active">Панель управления</a></li>
+            <li class="navigation__item"><a href="withdraw-DC.html" class="navigation__link link">Транзакции и вывод</a></li>
+            <li class="navigation__item"><a href="money.html" class="navigation__link link">Аренда, деньги и услуги</a></li>
+            <li class="navigation__item"><a href="miners.html" class="navigation__link link">Майнеры</a></li>
+            <li class="navigation__item"><a href="notifications.html" class="navigation__link link">Уведомления</a></li>
+          </ul>
+          <div class="menu-profile">
+            <img src="../images/avatar.jpg" alt="avatar" class="menu-profile__image">
+            <div class="menu-profile__info">
+              <a href="#" class="menu-profile__name link">Константин Осипов</a>
+              <div class="menu-profile__mail">konstantin.osipov@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="screen">
+      <ul class="sidebar">
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link sidebar__link--active">Панель управления</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Майнеры</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+      </ul>
+      <div class="main">
+          <div class="graphs">
+            <div class="switch current__switch">
+              <div class="switch__body">
+                <span class="switch__element js-switch-el js-switch-el-active" data-currency="btc">BTC</span>
+                <span class="switch__element js-switch-el" data-currency="eth">ETH</span>
+                <span class="switch__element js-switch-el" data-currency="ltc">LTC</span>
+              </div>
+            </div>
+            <div class="currency-info js-graph js-graph-visible" data-currency="btc">
+              <div class="current">
+                <div class="current__inner">
+                  <div class="current__currency">
+                    <span class="current__currency-name">BTC</span>
+                    <a href="#" class="link">Вывести</a>
+                  </div>
+                  <h2 class="current__result">
+                    <span class="current__result-emphasize">10</span>,61227281
+                  </h2>
+                  <div class="current__for-today">
+                    +0,0796449 чистыми сегодня
+                  </div>
+                  <div class="current__history">
+                    <a href="#" class="link">История транзакций и вывод</a>
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div class="graph__hashrate">
+                  Хэшрейт за <a href="#" class="link">30 дней</a>
+                </div>
+                <div class="graph__visual">
+                  <canvas id="btc-chart" class="graph__canvas"></canvas>
+                </div>
+                <div class="power">
+                  <span class="power__data power__data--average">2500 Th/s средний</span>
+                  <span class="power__data power__data--current">2501 Th/s текущий</span>
+                </div>
+                <div class="periods">
+                  <div class="periods__inner">
+                    <a href="#" class="periods__period">ВСЁ</a>
+                    <a href="#" class="periods__period">1Г</a>
+                    <a href="#" class="periods__period">3М</a>
+                    <a href="#" class="periods__period periods__period--active">1М</a>
+                    <a href="#" class="periods__period">1Н</a>
+                    <a href="#" class="periods__period">1Д</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="currency-info js-graph" data-currency="eth">
+              <div class="current">
+                <div class="current__inner">
+                  <div class="current__currency">
+                    <span class="current__currency-name">ETH</span>
+                    <a href="#" class="link">Вывести</a>
+                  </div>
+                  <h2 class="current__result">
+                    <span class="current__result-emphasize">1 200</span>,17222
+                  </h2>
+                  <div class="current__for-today">
+                    +0,0796449 чистыми сегодня
+                  </div>
+                  <div class="current__history">
+                    <a href="#" class="link">История транзакций и вывод</a>
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div class="graph__hashrate">
+                  Хэшрейт за <a href="#" class="link">30 дней</a>
+                </div>
+                <div class="graph__visual">
+                  <canvas id="eth-chart" class="graph__canvas"></canvas>
+                </div>
+                <div class="power">
+                  <span class="power__data power__data--average">2500 Th/s средний</span>
+                  <span class="power__data power__data--current">2501 Th/s текущий</span>
+                </div>
+                <div class="periods">
+                  <div class="periods__inner">
+                    <a href="#" class="periods__period">ВСЁ</a>
+                    <a href="#" class="periods__period">1Г</a>
+                    <a href="#" class="periods__period">3М</a>
+                    <a href="#" class="periods__period periods__period--active">1М</a>
+                    <a href="#" class="periods__period">1Н</a>
+                    <a href="#" class="periods__period">1Д</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="currency-info js-graph" data-currency="ltc">
+              <div class="current">
+                <div class="current__inner">
+                  <div class="current__currency">
+                    <span class="current__currency-name">LTC</span>
+                    <a href="#" class="link">Вывести</a>
+                  </div>
+                  <h2 class="current__result">
+                    <span class="current__result-emphasize">66</span>,61227281
+                  </h2>
+                  <div class="current__for-today">
+                    +0,0796449 чистыми сегодня
+                  </div>
+                  <div class="current__history">
+                    <a href="#" class="link">История транзакций и вывод</a>
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div class="graph__hashrate">
+                  Хэшрейт за <a href="#" class="link">30 дней</a>
+                </div>
+                <div class="graph__visual">
+                  <canvas id="ltc-chart" class="graph__canvas"></canvas>
+                </div>
+                <div class="power">
+                  <span class="power__data power__data--average">2500 Th/s средний</span>
+                  <span class="power__data power__data--current">2501 Th/s текущий</span>
+                </div>
+                <div class="periods">
+                  <div class="periods__inner">
+                    <a href="#" class="periods__period">ВСЁ</a>
+                    <a href="#" class="periods__period">1Г</a>
+                    <a href="#" class="periods__period">3М</a>
+                    <a href="#" class="periods__period periods__period--active">1М</a>
+                    <a href="#" class="periods__period">1Н</a>
+                    <a href="#" class="periods__period">1Д</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transactions">
+            <div class="transactions__inner">
+              <h2 class="section-title transactions__title">
+                <span>Транзакции</span>
+                <a href="#transactions-list" class="link show-link" data-toggle="collapse">Показать все</a>
+              </h2>
+              <table class="table table-borderless transactions-table">
+                <tr class="transactions-table__row">
+                  <td class="transactions-table__cell transactions-table__cell--name" rowspan="2">1 транзакция —</td>
+                  <td class="transactions-table__cell transactions-table__cell--info">0,08132107 BTC ($812)</td> 
+                </tr>
+                <tr class="transactions-table__row">
+                  <td class="transactions-table__cell transactions-table__cell--info">заморожено для вывода</td> 
+                </tr>
+              </table>
+              <div id="transactions-list" class="collapse">
+                <table class="table table-borderless transactions-table">
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--name" rowspan="2">2 транзакция —</td>
+                    <td class="transactions-table__cell transactions-table__cell--info">0,08132107 BTC ($812)</td> 
+                  </tr>
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--info">заморожено для вывода</td> 
+                  </tr>
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--name" rowspan="2">3 транзакция —</td>
+                    <td class="transactions-table__cell transactions-table__cell--info">0,08132107 BTC ($812)</td> 
+                  </tr>
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--info">заморожено для вывода</td> 
+                  </tr>
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--name" rowspan="2">4 транзакция —</td>
+                    <td class="transactions-table__cell transactions-table__cell--info">0,08132107 BTC ($812)</td> 
+                  </tr>
+                  <tr class="transactions-table__row">
+                    <td class="transactions-table__cell transactions-table__cell--info">заморожено для вывода</td> 
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="miners-settings">
+            <div class="miners miners--desktop-half">
+              <div class="miners__inner">
+                <h2 class="section-title miners__title">
+                  <span>Майнеры</span>
+                  <a href="#miners-list" class="link show-link" data-toggle="collapse">Показать все</a>
+                </h2>
+                <div class="miners__info">
+                  <div class="miners__info-item">
+                    <div class="miners__info-title">98%</div>
+                    <div class="miners__text">
+                      <span>
+                        аптайм 
+                      </span>
+                      <span>
+                        сегодня 
+                      </span>
+                    </div>
+                  </div>
+                  <div class="miners__info-item">
+                    <div class="miners__info-title">2</div>
+                    <div class="miners__text">
+                      <span>
+                        майнера 
+                      </span>
+                      <span>
+                        отключались 
+                      </span>
+                    </div>
+                  </div>
+                  <div class="miners__info-item miners__info-item--rows">
+                    <div class="miners__row">
+                      <span class="miners__amount">170</span><span class="miners__state">работают</span>
+                    </div>
+                    <div class="miners__row">
+                      <span class="miners__amount">1</span><span class="miners__state">обслуж-е</span>
+                    </div>
+                    <div class="miners__row">
+                      <span class="miners__amount">1</span><span class="miners__state">выключен</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="miners-list" class="collapse">
+                  <div class="miners__info">
+                    <div class="miners__info-item">
+                      <div class="miners__info-title">98%</div>
+                      <div class="miners__text">аптайм сегодня</div>
+                    </div>
+                    <div class="miners__info-item">
+                      <div class="miners__info-title">2</div>
+                      <div class="miners__text">майнера отключались</div>
+                    </div>
+                    <div class="miners__info-item">
+                      <div class="miners__row">
+                        <span class="miners__amount">170</span><span class="miners__state">работают</span>
+                      </div>
+                      <div class="miners__row">
+                        <span class="miners__amount">1</span><span class="miners__state">обслуж-е</span>
+                      </div>
+                      <div class="miners__row">
+                        <span class="miners__amount">1</span><span class="miners__state">выключен</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="miners__info">
+                    <div class="miners__info-item">
+                      <div class="miners__info-title">98%</div>
+                      <div class="miners__text">аптайм сегодня</div>
+                    </div>
+                    <div class="miners__info-item">
+                      <div class="miners__info-title">2</div>
+                      <div class="miners__text">майнера отключались</div>
+                    </div>
+                    <div class="miners__info-item">
+                      <div class="miners__row">
+                        <span class="miners__amount">170</span><span class="miners__state">работают</span>
+                      </div>
+                      <div class="miners__row">
+                        <span class="miners__amount">1</span><span class="miners__state">обслуж-е</span>
+                      </div>
+                      <div class="miners__row">
+                        <span class="miners__amount">1</span><span class="miners__state">выключен</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="net-settings">
+              <div class="net-settings__inner">
+                <h2 class="section-title net-settings__title">
+                  <span class="net-settings__title-text">Параметры сети</span>
+                  <div class="dropdown">
+                    <button type="button" class="net-settings__dropdown btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      BTC
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">ETH</a>
+                      <a class="dropdown-item" href="#">LTC</a>
+                    </div>
+                  </div>
+                </h2>
+                <table class="table table-borderless net-settings-table">
+                  <tr class="net-settings-table__row">
+                    <td class="net-settings-table__cell net-settings-table__cell--key">Хэшрейт</td>
+                    <td class="net-settings-table__cell net-settings-table__cell--value">33.62 Eh/s</td> 
+                  </tr>
+                  <tr class="net-settings-table__row">
+                    <td class="net-settings-table__cell net-settings-table__cell--key">Сложность</td>
+                    <td class="net-settings-table__cell net-settings-table__cell--value">4,31 Т</td> 
+                  </tr>
+                  <tr class="net-settings--table__row">
+                    <td class="net-settings-table__cell net-settings-table__cell--key">Следующая сложность</td>
+                    <td class="net-settings-table__cell net-settings-table__cell--value">4,58 T (+6,43%)</td> 
+                  </tr>
+                  <tr class="net-settings--table__row">
+                    <td class="net-settings-table__cell net-settings-table__cell--key">Сложность повысится</td>
+                    <td class="net-settings-table__cell net-settings-table__cell--value">через 6 дней</td> 
+                  </tr>
+                </table>
+                <div class="net-settings__info">
+                  <a href="#" class="link">Что такое сложность</a> и <a href="#" class="link">как работает биткоин</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="bottom-logo">
+      <div class="bottom-logo__inner">
+        <a href="#" class="logo">
+          <span class="logo__image logo__image--faded svg-logo-faded"></span>
+        </a>
+      </div>
+    </div>
+            
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

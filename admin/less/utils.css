@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background: #f4faff;
+  margin: auto;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+.inline-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.hidden {
+  display: none;
+}

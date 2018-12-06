@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>mnry</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li>
+          <a href="/" class="logo ilogo">
+          </a>
+        </li>
+        <li>
+          <a class="active" href="dashboard.html">
+            <span class="img ievents"></span> События и метрики
+          </a>
+        </li>
+        <li>
+          <a href="miners.html">
+            <span class="img iminers"></span>Майнеры
+          </a>
+        </li>
+        <li>
+          <a href="transactions.html">
+            <span class="img itransactions"></span>Транзакции
+          </a>
+        </li>
+        <li>
+          <a href="bills.html">
+            <span class="img ischet"></span>Cчета и услуги
+          </a>
+        </li>
+        <li>
+          <a href="users.html">
+             <span class="img iusers"></span>Пользо- ватели
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <span class="img inotifications"></span>Уведом- ления
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-user">
+        <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+      </div>
+    </div>
+    <div class="modal-outer hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Редактирование новости</div>
+            <div class="close close-modal"></div>
+        </div>
+        <div class="content">
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Новость</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea></textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Ссылка на подробности</div>
+              </div>
+              <input type="text"/>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Надпись на ссылке</div>
+              </div>
+              <input type="text" placeholder="Начните вводить имя"/>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Актуален до</div>
+              </div>
+              <div class="inputs">
+                  <input type="date" class="date" placeholder="ДД.ММ.ГГГГ"/>
+                  <input type="time" class="time" pattern="\d\d:\d\d" placeholder="ЧЧ:ММ"/>
+                  
+                  <div class="checkbox-pack">
+                    <div class="checkbox">
+                      <input class="checkbox__input" name="mark" id="mark" type="checkbox">
+                      <label for="mark"></label>
+                    </div>
+                    <label for="mark">Пометка «важно»</label>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="actions">
+            <button>Опубликовать</button>
+            <button class="red-bordered">Удалить новость</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="notifications-content">
+            <div class="top-filters">
+                <div class="top_title">Уведомления</div>
+                <div class="top-right">
+                    <div class="top-search">
+                        <input type="search" placeholder="Search…">
+                    </div>
+                </div>
+            </div>
+            <button class="top-button show-modal">Создать уведомление…</button>
+            <div class="dev-notifications-content">
+                <div class="row-notifications_item">
+                    <a href="#" class="edit"></a>
+                    <div class="title">Успей купить майнеры по старой цене <span class="red">ВАЖНО</span></div>
+                    <div class="text">
+                        15 июня майнеры будут стоить $20, сейчас $15<br>
+                        в 2 строки
+                        <a href="#">На страницу конкурса…</a>
+                    </div>
+                    <div class="date">Cегодня, 19:00</div>
+                </div>
+                <div class="row-notifications_item">
+                    <a href="#" class="edit"></a>
+                    <div class="title">Успей купить майнеры по старой цене <span class="red">ВАЖНО</span></div>
+                    <div class="text">
+                        15 июня майнеры будут стоить $20, сейчас $15<br>
+                        в 2 строки
+                        <a href="#">На страницу конкурса…</a>
+                    </div>
+                    <div class="date">Cегодня, 19:00</div>
+                </div>
+            </div>
+            <!-- /.dev-transactions-content -->
+            <div class="pagination">
+                <a href="#" class="pagination-item active">1</a>
+                <a href="#" class="pagination-item">2</a>
+                <a href="#" class="pagination-item">3</a>
+                <a href="#" class="pagination-item more">...</a>
+                <a href="#" class="pagination-item">100</a>
+
+            </div>
+        </div>
+        <!-- /.transactions-content -->
+    </div>
+    <!-- /.container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

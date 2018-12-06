@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+  <title>mnry</title>
+  <link rel="stylesheet" href="less/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <ul class="navbar-nav">
+      <li>
+        <a href="/" class="logo ilogo">
+        </a>
+      </li>
+      <li>
+        <a class="active" href="dashboard.html">
+          <span class="img ievents"></span> События и метрики
+        </a>
+      </li>
+      <li>
+        <a href="miners.html">
+          <span class="img iminers"></span>Майнеры
+        </a>
+      </li>
+      <li>
+        <a href="transactions.html">
+          <span class="img itransactions"></span>Транзакции
+        </a>
+      </li>
+      <li>
+        <a href="bills.html">
+          <span class="img ischet"></span>Cчета и услуги
+        </a>
+      </li>
+      <li>
+        <a href="users.html">
+           <span class="img iusers"></span>Пользо- ватели
+        </a>
+      </li>
+      <li>
+        <a href="notifications.html">
+          <span class="img inotifications"></span>Уведом- ления
+        </a>
+      </li>
+    </ul>
+    <div class="navbar-user">
+      <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+    </div>
+  </div>
+  <div class="container">
+    <div class="dashboard-content">
+      <div class="graphic-block">
+        <div class="graphic-items">
+          <div class="header-text">
+            <div class="currency-item">BTC</div>
+            <div class="report-day">Хэшрейт за <span class="date">30 дней</span> </div>
+          </div>
+          <canvas id="btc-chart" class="graph-canvas"></canvas>
+          <div class="power">
+            <div class="average">2500 Th/s средний</div>
+            <div class="current">2501 Th/s текущий</div>
+          </div>
+        </div>
+        <!-- /.graphic-items -->
+        <div class="graphic-items">
+          <div class="header-text">
+            <div class="currency-item">ETH</div>
+            <div class="report-day">Хэшрейт за <span class="date">30 дней</span> </div>
+          </div>
+          <canvas id="eth-chart" class="graph-canvas"></canvas>
+          <div class="power">
+            <div class="average">2500 Th/s средний</div>
+            <div class="current">2501 Th/s текущий</div>
+          </div>
+        </div>
+        <!-- /.graphic-items -->
+        <div class="graphic-items">
+          <div class="header-text">
+            <div class="currency-item">LTC</div>
+            <div class="report-day">Хэшрейт за <span class="date">30 дней</span> </div>
+          </div>
+          <canvas id="ltc-chart" class="graph-canvas"></canvas>
+          <div class="power">
+            <div class="average">2500 Th/s средний</div>
+            <div class="current">2501 Th/s текущий</div>
+          </div>
+        </div>
+        <!-- /.graphic-items -->
+      </div>
+      <!-- /.block-graphics -->
+      <div class="developments">
+        <div class="dev_title">События</div>
+        <!-- /.dev_title -->
+        <div class="dev-items">
+          <ul>
+            <li><a href="#">Все события</a></li>
+            <li><a href="#">События с майнерами</a></li>
+            <li><a href="#">События с пользователями</a></li>
+            <li><a href="#">Смена кошелька / владельца</a></li>
+          </ul>
+        </div>
+        <!-- /.dev-items -->
+        <div class="dev-search">
+          <input type="search" placeholder="Search…">
+        </div>
+        <!-- /.dev-search -->
+      </div>
+      <!-- /.developments -->
+      <div class="developments-content">
+        <div class="dev-content-title">Сегодня</div>
+        <div class="dev-content-item">
+          <div class="data-time">
+            4 с назад
+          </div>
+          <div class="event">Майнер 71 перегрелся</div>
+          <!-- /.event -->
+          <div class="act">Отключение на 5 минут</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            2 м назад
+          </div>
+          <div class="event">Майнер 71 некорректная скорость 9038 Th/S</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            час назад
+          </div>
+          <div class="event">Майнер 163 не отвечает</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            14:15:21
+          </div>
+          <div class="event">Майнер 12 не отвечает</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            13:57:00
+          </div>
+          <div class="event">Майнер 43 не отвечает</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            14:15:21
+          </div>
+          <div class="event">Майнер 12 не отвечает</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            13:00:00
+          </div>
+          <div class="event">Смена воркера для майнера 2698R27VOG3DOMZ8. GoGreenLight:wk532:b6dRQZpldC8rgUJufS4kffcmFku8TTF6HO → BitFury:BF2133:QY8remprTl5eAu4T7QzlRJjuVCg6wZwNVA.
+            <br> Сменил Ярослав Заречный.
+          </div>
+          <!-- /.event -->
+          <div class="act"></div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-item">
+          <div class="data-time">
+            12:58:20
+          </div>
+          <div class="event">Создан новый пользователь с ролью администратор — Сева Потапов seva.potapov@gmail.com. Создал Ярослав Заречный.</div>
+          <!-- /.event -->
+          <div class="act"></div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="dev-content-title">Вчера</div>
+        <div class="dev-content-item">
+          <div class="data-time">
+            13:57:00
+          </div>
+          <div class="event">Майнер 43 не отвечает</div>
+          <!-- /.event -->
+          <div class="act">Перезагрузка</div>
+          <!-- /.act -->
+        </div>
+        <!-- /.dev-content-item -->
+        <div class="show-more">Показать еще</div>
+        <!-- /.show-more -->
+      </div>
+      <!-- /.developments-content -->
+    </div>
+    <!-- /.dashboard-content -->
+  </div>
+  <!-- /.container -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

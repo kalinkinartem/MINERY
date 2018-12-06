@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>mnry.io - miners-bulk-select-edit-MC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="header__inner header__inner--relative">
+        <div class="back svg-back"></div>
+        <h1 class="page-title page-title--centered">Настройки майнеров</h1>
+      </div>
+    </div>
+    
+    <div class="screen">
+      <ul class="sidebar">
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Панель управления</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Майнеры</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+      </ul>
+      <div class="main">
+        <div class="power-config">
+          <div class="power-config__inner">
+            <h2 class="section-title power-config__title">Питание</h2>
+            <div class="radio-pack">
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="power-config" value="nochange-power" id="nochange-power">
+                  <label for="nochange-power"></label>
+                </div>
+                <label class="radio-pack__label" for="nochange-power">не менять</label>
+              </div>
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="power-config" value="on" id="on">
+                  <label for="on"></label>
+                </div>
+                <label class="radio-pack__label" for="on">включить</label>
+              </div>
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="power-config" value="off" id="off">
+                  <label for="off"></label>
+                </div>
+                <label class="radio-pack__label" for="off">выключить</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pool-config">
+          <div class="pool-config__inner">
+            <h2 class="section-title pool-config__title">Настройки пула</h2>
+            <div class="radio-pack pool-config__radio-pack">
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="pool-config" value="nochange-pool" id="nochange-pool">
+                  <label for="nochange-pool"></label>
+                </div>
+                <label class="radio-pack__label" for="nochange-pool">не менять</label>
+              </div>
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="pool-config" value="mnry" id="mnry">
+                  <label for="mnry"></label>
+                </div>
+                <label class="radio-pack__label" for="mnry">mnry.io</label>
+              </div>
+              <div class="radio-pack__bind">
+                <div class="radio radio-pack__radio">
+                  <input type="radio" class="radio__input" name="pool-config" value="own" id="own">
+                  <label for="own"></label>
+                </div>
+                <label class="radio-pack__label" for="own">свой</label>
+              </div>
+            </div>
+            <div class="inputs pool-config__inputs">
+              <div class="inputs__bind">
+                <div class="inputs__title">Пул</div>
+                <input type="text" class="input inputs__input" placeholder="разные значения">
+              </div>
+              <div class="inputs__bind">
+                <div class="inputs__title">Воркер</div>
+                <input type="text" class="input inputs__input" placeholder="разные значения">
+              </div>
+              <div class="inputs__bind">
+                <div class="inputs__title">Пароль</div>
+                <input type="password" class="input inputs__input">
+              </div>
+            </div>
+            <div class="pool-config__note">
+              На 2-х майнерах из 7 настройки пула не сохранятся, так как они они созданы для работы на пуле mnry.io. 
+              На нём и продолжат работать.
+            </div>
+          </div>
+        </div>
+        <div class="save-settings">
+          <div class="save-settings__inner">
+            <a href="#" class="btn button button--fullwidth">Сохранить настройки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

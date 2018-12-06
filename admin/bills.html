@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>mnry</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li>
+          <a href="/" class="logo ilogo">
+          </a>
+        </li>
+        <li>
+          <a class="active" href="dashboard.html">
+            <span class="img ievents"></span> События и метрики
+          </a>
+        </li>
+        <li>
+          <a href="miners.html">
+            <span class="img iminers"></span>Майнеры
+          </a>
+        </li>
+        <li>
+          <a href="transactions.html">
+            <span class="img itransactions"></span>Транзакции
+          </a>
+        </li>
+        <li>
+          <a href="bills.html">
+            <span class="img ischet"></span>Cчета и услуги
+          </a>
+        </li>
+        <li>
+          <a href="users.html">
+             <span class="img iusers"></span>Пользо- ватели
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <span class="img inotifications"></span>Уведом- ления
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-user">
+        <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+      </div>
+    </div>
+    <div class="modal-outer js-modal hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Новый счёт</div>
+            <div class="close js-close-modal"></div>
+        </div>
+        <div class="content">
+          <div class="input small">
+              <div class="title">
+                <div class="text">Выставить счёт пользователю</div>
+              </div>
+              <input type="text" placeholder="Начните вводить имя"/>
+          </div>
+          <div class="select-advanced">
+            <div class="title">
+              За майнер
+            </div>
+            <script type="text/javascript">
+              var miners = {
+                'obsl': [
+                  {
+                    'selected': true,
+                    'id': 'DNLHQ2FOAYF65PJY',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'ADA!qq',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'q',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  ],
+                  'other': [
+                  {
+                    'selected': false,
+                    'id': '222',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': true,
+                    'id': 'ADA!323',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': '123',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  }
+                  ]
+              };
+            </script>
+            <div id="prettyinput">
+              <input type="text" placeholder="Выберите майнер или несколько…">
+            </div>
+            <div class="dropdown hidden">
+
+            </div>
+            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Детали и описание</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea></textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Сумма к оплате</div>
+              </div>
+              <input type="text"/>
+          </div>
+          <div class="actions">
+            <button>Выставить счет</button>
+            <!--a href="#" class="delete">Удалить счёт</a-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-outer js-modal-second hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Редактировать счёт</div>
+            <div class="close js-close-modal-second"></div>
+        </div>
+        <div class="content">
+          <div class="stages">
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">счёт создан</div>
+            </div>
+            <div class="stage stage--accept">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">согласие пользователя</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">в работе</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">работа зевершена</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">оплата</div>
+            </div>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Выставить счёт пользователю</div>
+              </div>
+              <input type="text" value="ivan@gmail.com"/>
+          </div>
+          <div class="select-advanced">
+            <div class="title">
+              За майнер
+            </div>
+            <script type="text/javascript">
+              var miners = {
+                'obsl': [
+                  {
+                    'selected': true,
+                    'id': 'DNLHQ2FOAYF65PJY',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'ADA!qq',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'q',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  ],
+                  'other': [
+                  {
+                    'selected': false,
+                    'id': '222',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': true,
+                    'id': 'ADA!323',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': '123',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  }
+                  ]
+              };
+            </script>
+            <div id="prettyinput">
+              <input type="text" placeholder="Выберите майнер или несколько…">
+            </div>
+            <div class="dropdown hidden">
+
+            </div>
+            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/ value="Замена кулера">
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Детали и описание</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Сумма к оплате</div>
+              </div>
+              <input type="text"/ value="500">
+          </div>
+          <div class="actions">
+            <!--<button>Выставить счет</button>-->
+            <button class="red-bordered">Удалить счёт</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-outer js-modal-third hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Редактировать счёт</div>
+            <div class="close js-close-modal-third"></div>
+        </div>
+        <div class="content">
+          <div class="stages">
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">счёт создан</div>
+            </div>
+            <div class="stage stage--refuse">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">согласие пользователя</div>
+              <div class="bubble">
+                <div class="title">Комментарий пользователя:</div>
+                <div class="comment">Слишком дорого.</div>
+              </div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">в работе</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">работа зевершена</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">оплата</div>
+            </div>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Выставить счёт пользователю</div>
+              </div>
+              <input type="text" value="ivan@gmail.com"/>
+          </div>
+          <div class="select-advanced">
+            <div class="title">
+              За майнер
+            </div>
+            <script type="text/javascript">
+              var miners = {
+                'obsl': [
+                  {
+                    'selected': true,
+                    'id': 'DNLHQ2FOAYF65PJY',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'ADA!qq',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'q',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  ],
+                  'other': [
+                  {
+                    'selected': false,
+                    'id': '222',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': true,
+                    'id': 'ADA!323',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': '123',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  }
+                  ]
+              };
+            </script>
+            <div id="prettyinput">
+              <input type="text" placeholder="Выберите майнер или несколько…">
+            </div>
+            <div class="dropdown hidden">
+
+            </div>
+            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/ value="Замена кулера">
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Детали и описание</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Сумма к оплате</div>
+              </div>
+              <input type="text"/ value="500">
+          </div>
+          <div class="actions">
+            <!--<button>Выставить счет</button>-->
+            <button class="red-bordered">Удалить счёт</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-outer js-modal-fourth hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Редактировать счёт</div>
+            <div class="close js-close-modal-fourth"></div>
+        </div>
+        <div class="content">
+          <div class="stages">
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">счёт создан</div>
+            </div>
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">согласие пользователя</div>
+              <!--<div class="bubble">
+                <div class="title">Комментарий пользователя:</div>
+                <div class="comment">Слишком дорого.</div>
+              </div>-->
+            </div>
+            <div class="stage stage--accept">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">в работе</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">работа зевершена</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">оплата</div>
+            </div>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Выставить счёт пользователю</div>
+              </div>
+              <input type="text" value="ivan@gmail.com"/>
+          </div>
+          <div class="select-advanced">
+            <div class="title">
+              За майнер
+            </div>
+            <script type="text/javascript">
+              var miners = {
+                'obsl': [
+                  {
+                    'selected': true,
+                    'id': 'DNLHQ2FOAYF65PJY',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'ADA!qq',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'q',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  ],
+                  'other': [
+                  {
+                    'selected': false,
+                    'id': '222',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': true,
+                    'id': 'ADA!323',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': '123',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  }
+                  ]
+              };
+            </script>
+            <div id="prettyinput">
+              <input type="text" placeholder="Выберите майнер или несколько…">
+            </div>
+            <div class="dropdown hidden">
+
+            </div>
+            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/ value="Замена кулера">
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Детали и описание</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Сумма к оплате</div>
+              </div>
+              <input type="text"/ value="500">
+          </div>
+          <div class="actions">
+            <button>Завершить работу</button>
+            <button class="red-bordered">Удалить счёт</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-outer js-modal-fifth hidden">
+      <div class="modal">
+        <div class="title">
+            <div class="text">Редактировать счёт</div>
+            <div class="close js-close-modal-fifth"></div>
+        </div>
+        <div class="content">
+          <div class="stages">
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">счёт создан</div>
+            </div>
+            <div class="stage stage--done">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">согласие пользователя</div>
+              <!--<div class="bubble">
+                <div class="title">Комментарий пользователя:</div>
+                <div class="comment">Слишком дорого.</div>
+              </div>-->
+            </div>
+            <div class="stage stage--accept">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">в работе</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">работа зевершена</div>
+            </div>
+            <div class="stage">
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="text">оплата</div>
+            </div>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Выставить счёт пользователю</div>
+              </div>
+              <input type="text" value="ivan@gmail.com"/>
+          </div>
+          <div class="select-advanced">
+            <div class="title">
+              За майнер
+            </div>
+            <script type="text/javascript">
+              var miners = {
+                'obsl': [
+                  {
+                    'selected': true,
+                    'id': 'DNLHQ2FOAYF65PJY',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'ADA!qq',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': 'q',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  ],
+                  'other': [
+                  {
+                    'selected': false,
+                    'id': '222',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': true,
+                    'id': 'ADA!323',
+                    'type': 'ETH T0 2 Th/s',
+                    'curency': 'ETH',
+                    'performance' : '2,312 Th/s',
+                    'temperature' : '11°C',
+                    'fan': '38%'
+                  },
+                  {
+                    'selected': false,
+                    'id': '123',
+                    'type': 'BTC T9 12 Th/s',
+                    'curency': 'BTC',
+                    'performance' : '1231,12 Th/s',
+                    'temperature' : '71°C',
+                    'fan': '38%'
+                  }
+                  ]
+              };
+            </script>
+            <div id="prettyinput">
+              <input type="text" placeholder="Выберите майнер или несколько…">
+            </div>
+            <div class="dropdown hidden">
+
+            </div>
+            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Заголовок</div>
+                <div class="symbols"><span class="count">0</span>/60</div>
+              </div>
+              <input type="text"/ value="Замена кулера">
+          </div>
+          <div class="input">
+              <div class="title">
+                <div class="text">Детали и описание</div>
+                <div class="symbols"><span class="count">0</span>/280</div>
+              </div>  
+              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+          </div>
+          <div class="input small">
+              <div class="title">
+                <div class="text">Сумма к оплате</div>
+              </div>
+              <input type="text"/ value="500">
+          </div>
+          <div class="actions">
+            <button class="bordered">Изменить решение </button>
+            <div class="note">
+              Оборудование включится,
+              у пользователя спишется оплата.
+            </div>
+            <button>Завершить работу</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="bills-content">
+            <div class="top-filters">
+                <div class="top_title">Счета и услуги</div>
+                <div class="top-right">
+                    <div class="top-items">
+                        <ul>
+                            <li><a href="#" class="active">Все</a></li>
+                            <li><a href="#">Неоплаченные</a></li>
+                            <li><a href="#">Оплаченные</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-search">
+                        <input type="search" placeholder="Search…">
+                    </div>
+                </div>
+            </div>
+            <button class="top-button js-show-modal">Выставить счет…</button>
+            <div class="dev-bills-content">
+                <div class="row-title">
+                    <div class="name">Услуга</div>
+                    <div class="for">для пользователя</div>
+                    <div class="summa">на сумму</div>
+                    <div class="status">статус</div>
+                    <div class="actions"></div>
+                </div>
+                <!-- /.row-title -->
+                <div class="row-bills_item">
+                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="for">jennie_keebler@bernardo.biz</div>
+                    <div class="summa">72687 <span class="rub">P</span></div>
+                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="actions"><a href="#" class="edit js-show-modal-second"></a></div>
+                </div>
+                <div class="row-bills_item">
+                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="for">jennie_keebler@bernardo.biz</div>
+                    <div class="summa">72687 <span class="rub">P</span></div>
+                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="actions"><a href="#" class="edit js-show-modal-third"></a></div>
+                </div>
+                <div class="row-bills_item">
+                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="for">jennie_keebler@bernardo.biz</div>
+                    <div class="summa">72687 <span class="rub">P</span></div>
+                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="actions"><a href="#" class="edit js-show-modal-fourth"></a></div>
+                </div>
+                <div class="row-bills_item">
+                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="for">jennie_keebler@bernardo.biz</div>
+                    <div class="summa">72687 <span class="rub">P</span></div>
+                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="actions"><a href="#" class="edit js-show-modal-fifth"></a></div>
+                </div>
+            </div>
+            <!-- /.dev-transactions-content -->
+            <div class="pagination">
+                <a href="#" class="pagination-item active">1</a>
+                <a href="#" class="pagination-item">2</a>
+                <a href="#" class="pagination-item">3</a>
+                <a href="#" class="pagination-item more">...</a>
+                <a href="#" class="pagination-item">100</a>
+
+            </div>
+        </div>
+        <!-- /.transactions-content -->
+    </div>
+    <!-- /.container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script> 
+    <script src="js/script.js"></script>
+</body>
+
+</html>
