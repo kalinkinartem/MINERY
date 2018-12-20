@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>mnry.io - miners-with-baloons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body class="body">
+    
+    <div class="modal-ok">
+      <div class="modal-ok__icon svg-ok-white"></div>
+      7 майнеров настроено
+      <span class="modal-ok__close svg-popup-close"></span>
+    </div>
+    
+    <div class="header">
+      <div class="header__inner">
+        <div class="toggle js-toggle">
+          <span class="toggle__line toggle__line--top"></span>
+          <span class="toggle__line toggle__line--middle"></span>
+          <span class="toggle__line toggle__line--bottom"></span>
+        </div>
+        <h1 class="page-title">Майнеры</h1>
+        <a href="#" class="logo header__logo">
+          <span class="logo__image svg-logo"></span>
+        </a>
+        <div class="menu js-menu">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="dashboard.html" class="navigation__link link">Панель управления</a></li>
+            <li class="navigation__item"><a href="withdraw-DC.html" class="navigation__link link">Транзакции и вывод</a></li>
+            <li class="navigation__item"><a href="money.html" class="navigation__link link">Аренда, деньги и услуги</a></li>
+            <li class="navigation__item"><a href="miners.html" class="navigation__link navigation__link--active link">Майнеры</a></li>
+            <li class="navigation__item"><a href="notifications.html" class="navigation__link link">Уведомления</a></li>
+          </ul>
+          <div class="menu-profile">
+            <img src="../images/avatar.jpg" alt="avatar" class="menu-profile__image">
+            <div class="menu-profile__info">
+              <a href="#" class="menu-profile__name link">Константин Осипов</a>
+              <div class="menu-profile__mail">konstantin.osipov@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="screen">
+      <ul class="sidebar">
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Панель управления</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link sidebar__link--active">Майнеры</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+      </ul>
+      <div class="main">
+        <div class="miners miners--desktop-full">
+          <div class="miners__inner">
+            <div class="miners__info">
+              <div class="miners__info-item">
+                <div class="miners__centering">
+                  <div class="miners__info-title">98%</div>
+                  <div class="miners__text">
+                    <span>
+                      аптайм 
+                    </span>
+                    <div class="dropdown">
+                      <button type="button" class="miners__dropdown btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        сегодня
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">вчера</a>
+                        <a class="dropdown-item" href="#">не вчера</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="miners__info-item">
+                <div class="miners__centering">
+                    <div class="miners__info-title">2</div>
+                    <div class="miners__text">
+                      <span>
+                        майнера 
+                      </span>
+                      <a href="#" class="link">отключались</a>
+                   </div>
+                </div>
+              </div>
+              <div class="miners__info-item miners__info-item--rows">
+                <div class="miners__centering">
+                  <div class="miners__row">
+                    <span class="miners__amount">170</span><span class="miners__state">работают</span>
+                  </div>
+                  <div class="miners__row">
+                    <span class="miners__amount">1</span><span class="miners__state">обслуж-е</span>
+                  </div>
+                  <div class="miners__row">
+                    <span class="miners__amount">1</span><span class="miners__state">выключен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="miners-pool">
+          <div class="miners-pool__inner">
+            <div class="switch miners-pool__switch">
+              <div class="switch__body">
+                <span class="switch__element js-switch-el">Все</span>
+                <span class="switch__element js-switch-el js-switch-el-active">BTC</span>
+                <span class="switch__element js-switch-el">ETH</span>
+                <span class="switch__element js-switch-el">LTC</span>
+              </div>
+            </div>
+            <h2 class="miners-pool__title">7 майнеров — <a href="#" class="link">настроить</a></h2>
+            
+            <table class="miners-table table">
+              <tr class="miners-table__header">
+                <th class="miners-table__header-cell miners-table__header-cell--model">ID / модель</th>
+                <th class="miners-table__header-cell miners-table__header-cell--pool">пул</th>
+                <th class="miners-table__header-cell miners-table__header-cell--state">состояние</th> 
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name1" id="name1">
+                          <label for="name1">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                            <span class="checkbox-system__warning svg-warning"></span>
+                          </label>
+                          <div class="modal-bubble">
+                            Майнер можно будет включить, 
+                            когда его снимут с обслуживания
+                          </div>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name2" id="name2">
+                          <label for="name2">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                          <div class="modal-bubble" style="display: none">
+                            Майнер можно будет включить, 
+                            когда его снимут с обслуживания
+                          </div>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner2414</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>выключен 2 дня</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>—</div>
+                    <div class="miners-table__power">—</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name3" id="name3" checked>
+                          <label for="name3">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name4" id="name4" checked>
+                          <label for="name4">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                          <div class="modal-bubble">
+                            Майнер можно будет включить, 
+                            когда его снимут с обслуживания
+                          </div>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name5" id="name5" checked>
+                          <label for="name5">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name6" id="name6" checked>
+                          <label for="name6">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name7" id="name7" checked>
+                          <label for="name7">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name7" id="name7" checked>
+                          <label for="name7">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name7" id="name7" checked>
+                          <label for="name7">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name7" id="name7" checked>
+                          <label for="name7">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="miners-table__row">
+                <td class="miners-table__cell miners-table__cell--model">
+                  <div class="miners-table__bind">
+                    <div class="miners-table__checkbox">
+                        <div class="checkbox-system">
+                          <input type="checkbox" class="checkbox-system__input" name="name7" id="name7" checked>
+                          <label for="name7">
+                            <span class="checkbox-system__ok svg-ok"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="miners-table__info">
+                      <div><a href="#" class="link">miner1312</a> / <a href="#" class="link">BTC P106x9</a></div>
+                      <div>обслуживание 10 часов 50 минут</div>
+                      <div class="miners-table__pool">mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-table__cell miners-table__cell--pool">
+                  mnry.io
+                </td>
+                <td class="miners-table__cell miners-table__cell--state">
+                  <div class="miners-table__state">
+                    <div>71°С</div>
+                    <div class="miners-table__power">13 651 Th/s</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+            
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

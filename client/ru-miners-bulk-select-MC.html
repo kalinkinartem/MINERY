@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>mnry.io - miners-bulk-select-MC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="header__inner header__inner--relative">
+        <div class="back svg-back"></div>
+        <h1 class="page-title page-title--centered">Выбор майнеров</h1>
+      </div>
+    </div>
+    
+    <div class="screen">
+      <ul class="sidebar">
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Панель управления</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Майнеры</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+      </ul>
+      <div class="main">
+        <div class="miners-select">
+          <div class="miners-select__inner">
+            <div class="switch miners-select__switch">
+              <div class="switch__body">
+                <span class="switch__element js-switch-el">Все</span>
+                <span class="switch__element js-switch-el js-switch-el-active">BTC</span>
+                <span class="switch__element js-switch-el">ETH</span>
+                <span class="switch__element js-switch-el">LTC</span>
+              </div>
+            </div>
+            <div class="miners-select__set">
+              <a href="#" class="btn button miners-select__button">Настроить 7 майнеров</a>
+            </div>
+            
+            <table class="miners-select-table table">
+              <tr class="miners-select-table__header">
+                <th class="miners-select-table__header-cell miners-select-table__header-cell--highlight"><a href="#" class="link">Выделить все</a></th>
+                <th class="miners-select-table__header-cell miners-select-table__header-cell--clear"><a href="#" class="link">Снять выделение</a></th> 
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name1" id="name1">
+                          <label for="name1"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name2" id="name2">
+                          <label for="name2"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>—</div>
+                  <div>—</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name3" id="name3">
+                          <label for="name3"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name4" id="name4">
+                          <label for="name4"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name5" id="name5">
+                          <label for="name5"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name6" id="name6">
+                          <label for="name6"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+              <tr class="miners-select-table__row">
+                <td class="miners-select-table__cell miners-select-table__cell--model">
+                  <div class="miners-select-table__bind">
+                    <div class="miners-select-table__checkbox">
+                        <div class="checkbox">
+                          <input type="checkbox" class="checkbox__input" name="name7" id="name7">
+                          <label for="name7"></label>
+                        </div>
+                    </div>
+                    <div class="miners-select-table__info">
+                      <div><span class="miners-select-table__emphasize">miner1312</span> / <span class="miners-select-table__emphasize">BTC P106x9</span></div>
+                      <div>mnry.io</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="miners-select-table__cell miners-select-table__cell--state">
+                  <div>71°С</div>
+                  <div>13 651,84 Th/s</div>
+                </td>
+              </tr>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+            
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

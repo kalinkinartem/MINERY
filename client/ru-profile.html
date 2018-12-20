@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>mnry.io - profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="header__inner">
+        <div class="toggle js-toggle">
+          <span class="toggle__line toggle__line--top"></span>
+          <span class="toggle__line toggle__line--middle"></span>
+          <span class="toggle__line toggle__line--bottom"></span>
+        </div>
+        <h1 class="page-title">Профиль</h1>
+        <a href="#" class="logo header__logo">
+          <span class="logo__image svg-logo"></span>
+        </a>
+        <div class="menu js-menu">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="dashboard.html" class="navigation__link link">Панель управления</a></li>
+            <li class="navigation__item"><a href="withdraw-DC.html" class="navigation__link link">Транзакции и вывод</a></li>
+            <li class="navigation__item"><a href="money.html" class="navigation__link link">Аренда, деньги и услуги</a></li>
+            <li class="navigation__item"><a href="miners.html" class="navigation__link link">Майнеры</a></li>
+            <li class="navigation__item"><a href="notifications.html" class="navigation__link link">Уведомления</a></li>
+          </ul>
+          <div class="menu-profile">
+            <img src="../images/avatar.jpg" alt="avatar" class="menu-profile__image">
+            <div class="menu-profile__info">
+              <a href="#" class="menu-profile__name link">Константин Осипов</a>
+              <div class="menu-profile__mail">konstantin.osipov@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="screen">
+      <ul class="sidebar">
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Панель управления</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Майнеры</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+      </ul>
+      <div class="main">
+        <div class="profile">
+          <div class="profile__inner">
+            <div class="profile__edit">
+              <div class="profile__image-wrap">
+                <img src="../images/avatar.jpg" alt="avatar" class="profile__image">
+              </div>
+              <div class="profile__info">
+                <div class="profile__name section-title">
+                  <div class="profile__firstname">Константин</div>
+                  <div class="profile__lastname">Осипов</div>
+                </div>
+                <div class="profile__mail">konstantin.osipov@gmail.com</div>
+                <a href="#" class="profile__config config-link link">настроить</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="authorize">
+          <div class="authorize__inner">
+            <h2 class="authorize__title section-title">2-факторная авторизация</h2>
+            <div class="authorize__status">включена</div>
+            <a href="#" class="config-link link">настроить</a>
+          </div>
+        </div>
+        
+        <div class="wallets">
+          <div class="wallets__inner">
+            <a href="#" class="config-link link">+ новый</a>
+            <h2 class="wallets__title section-title">Кошельки</h2>
+            <table class="table wallets-table">
+              <tr class="wallets-table__header">
+                <th class="wallets-table__header-cell">
+                  Валюта
+                </th>
+                <th class="wallets-table__header-cell">
+                  Название кошелька
+                </th>
+                <th class="wallets-table__header-cell">
+                  Адрес
+                </th>
+              </tr>
+              <tr class="wallets-table__row">
+                <td class="wallets-table__cell">
+                  <div class="wallets-table__bind">
+                    <span class="wallets-table__currency">BTC</span>
+                    <a href="#" class="link wallets-table__name">основной кошелёк</a>
+                  </div>
+                  <div class="wallets-table__address">
+                    3FkensadpSLqD8L79in12NXUgjRoH9sjXa
+                  </div>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--name">
+                  <a href="#" class="link">основной кошелёк</a>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--address">
+                  <div class="wallets-table__address-edit">
+                    <span>3FkensadpSLqD8L79in12NXUgjRoH9sjXa</span>
+                    <a href="#" class="edit-button">
+                      <span class="edit-button__icon svg-edit"></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wallets-table__row">
+                <td class="wallets-table__cell">
+                  <div class="wallets-table__bind">
+                    <span class="wallets-table__currency">BTC</span>
+                    <a href="#" class="link wallets-table__name">резерв</a>
+                  </div>
+                  <div class="wallets-table__address">
+                    slf7askd9323j8fdF8fDFFaeiilpplW523ASw
+                  </div>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--name">
+                  <a href="#" class="link">резерв</a>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--address">
+                  <div class="wallets-table__address-edit">
+                    <span>3FkensadpSLqD8L79in12NXUgjRoH9sjXa</span>
+                    <a href="#" class="edit-button">
+                      <span class="edit-button__icon svg-edit"></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wallets-table__row">
+                <td class="wallets-table__cell">
+                  <div class="wallets-table__bind">
+                    <span class="wallets-table__currency">ETH</span>
+                    <a href="#" class="link wallets-table__name">основной</a>
+                  </div>
+                  <div class="wallets-table__address">
+                    7FEn98SdHtNECsFvXgqJc07GQvJ0EtElwY
+                  </div>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--name">
+                  <a href="#" class="link">основной</a>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--address">
+                  <div class="wallets-table__address-edit">
+                    <span>3FkensadpSLqD8L79in12NXUgjRoH9sjXa</span>
+                    <a href="#" class="edit-button">
+                      <span class="edit-button__icon svg-edit"></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="wallets-table__row">
+                <td class="wallets-table__cell">
+                  <div class="wallets-table__bind">
+                    <span class="wallets-table__currency">LTC</span>
+                    <a href="#" class="link wallets-table__name">основной</a>
+                  </div>
+                  <div class="wallets-table__address">
+                    0RHJl5CrdwaZvX2151bPUrKaYzqArtIkyT
+                  </div>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--name">
+                  <a href="#" class="link">резерв</a>
+                </td>
+                <td class="wallets-table__cell wallets-table__cell--address">
+                  <div class="wallets-table__address-edit">
+                    <span>3FkensadpSLqD8L79in12NXUgjRoH9sjXa</span>
+                    <a href="#" class="edit-button">
+                      <span class="edit-button__icon svg-edit"></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+          </div>
+        </div>
+        
+        <div class="support">
+          <div class="support__inner">
+            <a href="#" class="link support__link">Написать в техподдержку</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+   
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

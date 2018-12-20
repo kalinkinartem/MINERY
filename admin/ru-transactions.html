@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>mnry</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li>
+          <a href="/" class="logo ilogo">
+          </a>
+        </li>
+        <li>
+          <a class="active" href="dashboard.html">
+            <span class="img ievents"></span> События и метрики
+          </a>
+        </li>
+        <li>
+          <a href="miners.html">
+            <span class="img iminers"></span>Майнеры
+          </a>
+        </li>
+        <li>
+          <a href="transactions.html">
+            <span class="img itransactions"></span>Транзакции
+          </a>
+        </li>
+        <li>
+          <a href="bills.html">
+            <span class="img ischet"></span>Cчета и услуги
+          </a>
+        </li>
+        <li>
+          <a href="users.html">
+             <span class="img iusers"></span>Пользо- ватели
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <span class="img inotifications"></span>Уведом- ления
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-user">
+        <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+      </div>
+    </div>
+    <div class="modal-outer hidden">
+      <div class="modal">
+        <div class="title">
+          <div class="text">Настройка группы майнеров</div>
+          <div class="close close-modal"></div>
+        </div>
+        <div class="second-title">
+          <div class="text">2999 работающих майнеров выбрано</div>
+          <button>Выбрать другие</button>
+        </div>
+        <div class="content-second">
+          <div class="left">
+            <div class="window top">
+              <div class="title">Питание</div>
+              <div class="inline check">
+                <div class="radio">
+                  <input class="radio__input" name="user-config" value="disabled" id="disabled" type="radio">
+                  <label for="disabled"></label>
+                </div>
+                <label for="disabled">включить</label>
+              </div>
+              <div class="inline">
+                <div class="radio">
+                  <input class="radio__input" name="user-config" value="disabled" id="disabled2" type="radio">
+                  <label for="disabled2"></label>
+                </div>
+                <label for="disabled2">отключить</label>
+              </div>
+            </div>
+            <div class="window bottom">
+              <div class="topper">
+                <div class="title">Владелец</div>
+                <select>
+                  <option value="all">не менять</option>
+                  <option value="btc">BTC</option>
+                  <option value="eth">ETH</option>
+                  <option value="ltc">LTC</option>
+                </select>
+              </div>
+              <select class="big">
+                <option value="all">не менять</option>
+                <option value="btc">BTC</option>
+                <option value="eth">ETH</option>
+                <option value="ltc">LTC</option>
+              </select>
+            </div>
+          </div>
+          <div class="window right">
+            <div class="topper">
+              <div class="title">Настройки пула</div>
+              <select>
+                <option value="all">не менять</option>
+                <option value="btc">BTC</option>
+                <option value="eth">ETH</option>
+                <option value="ltc">LTC</option>
+              </select>
+            </div>
+            <div class="input">
+              <div class="title nopaddingtop">Пул</div>
+              <input type="text"/>
+            </div>
+            <div class="input">
+              <div class="title">Воркер</div>
+              <input type="text"/>
+            </div>
+            <div class="input">
+              <div class="title">Пароль</div>
+              <input type="text"/>
+            </div>
+          </div>
+          <br>
+          <button class="blue">Сохранить настройки</button>
+          <button>Поставить на обслуживание</button>
+          <button>Обновить прошивку</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-outer js-modal hidden">
+      <div class="modal modal--narrow">
+        <div class="title">
+            <div class="text">Подтверждение транзакции</div>
+            <div class="close js-close-modal"></div>
+        </div>
+        <div class="content">
+          <div class="subtitle">Заявка на вывод</div>
+          <div class="info">
+            <div class="data">
+              <div class="key">Пользователь</div>
+              <div class="value">daphney.klocko@pierce.ca</div>
+            </div>
+            <div class="data">
+              <div class="key">Дата</div>
+              <div class="value">31 мая 14:01</div>
+            </div>
+            <div class="data">
+              <div class="key">Кошелёк</div>
+              <div class="value value--note">
+                <span>UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</span>
+                <div class="note"></div>
+              </div>
+            </div>
+            <div class="data">
+              <div class="key">Сумма</div>
+              <div class="value">0,00162232 ETH</div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="wide">В работу</button>
+            <!--a href="#" class="delete">Удалить счёт</a-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-outer js-modal-second hidden">
+      <div class="modal modal--narrow">
+        <div class="title">
+            <div class="text">Подтверждение транзакции</div>
+            <div class="close js-close-modal-second"></div>
+        </div>
+        <div class="content">
+          <div class="subtitle">Заявка на вывод</div>
+          <div class="info">
+            <div class="data">
+              <div class="key">Пользователь</div>
+              <div class="value">daphney.klocko@pierce.ca</div>
+            </div>
+            <div class="data">
+              <div class="key">Дата</div>
+              <div class="value">31 мая 14:01</div>
+            </div>
+            <div class="data">
+              <div class="key">Кошелёк</div>
+              <div class="value value--note">
+                <span>UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</span>
+                <div class="note"></div>
+              </div>
+            </div>
+            <div class="data">
+              <div class="key">Сумма</div>
+              <div class="value">0,00162232 ETH</div>
+            </div>
+          </div>
+          <div class="actions">
+            <button>Подтвердить</button>
+            <button class="red-bordered">Отклонить</button>
+            <!--a href="#" class="delete">Удалить счёт</a-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-outer js-modal-third hidden">
+      <div class="modal modal--narrow">
+        <div class="title">
+            <div class="text">Подтверждение транзакции</div>
+            <div class="close js-close-modal-third"></div>
+        </div>
+        <div class="content">
+          <div class="subtitle">Заявка на вывод</div>
+          <div class="info">
+            <div class="data">
+              <div class="key">Пользователь</div>
+              <div class="value">daphney.klocko@pierce.ca</div>
+            </div>
+            <div class="data">
+              <div class="key">Дата</div>
+              <div class="value">31 мая 14:01</div>
+            </div>
+            <div class="data">
+              <div class="key">Кошелёк</div>
+              <div class="value value--note">
+                <span>UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</span>
+                <div class="note"></div>
+              </div>
+            </div>
+            <div class="data">
+              <div class="key">Сумма</div>
+              <div class="value">0,00162232 ETH</div>
+            </div>
+          </div>
+          <div class="actions actions--column">
+            <button class="bordered fixed">Изменить решение</button>
+            <div class="note">
+              Отмена транзакции невозможна.
+              Подтвердить вывод?
+            </div>
+            <button class="fixed">Подтвердить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-outer js-modal-fourth hidden">
+      <div class="modal modal--narrow">
+        <div class="title">
+            <div class="text">Подтверждение test</div>
+            <div class="close js-close-modal-fourth"></div>
+        </div>
+        <div class="content">
+          <div class="subtitle">Заявка на вывод</div>
+          <div class="info">
+            <div class="data">
+              <div class="key">Пользователь</div>
+              <div class="value">daphney.klocko@pierce.ca</div>
+            </div>
+            <div class="data">
+              <div class="key">Дата</div>
+              <div class="value">31 мая 14:01</div>
+            </div>
+            <div class="data">
+              <div class="key">Кошелёк</div>
+              <div class="value value--note">
+                <span>UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</span>
+                <div class="note"></div>
+              </div>
+            </div>
+            <div class="data">
+              <div class="key">Сумма</div>
+              <div class="value">0,00162232 ETH</div>
+            </div>
+          </div>
+          <div class="actions actions--column">
+            <button class="bordered fixed">Изменить решение</button>
+            <div class="input">
+              <div class="title">Причина отказа</div>
+              <textarea></textarea>
+            </div>
+            <button class="fixed bg-red">Подтвердить отказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="container">
+        <div class="transactions-content">
+
+            <div class="top-filters">
+                <div class="top_title">Транзакции</div>
+                <div class="top-right">
+                    <div class="top-search">
+                        <input type="search" placeholder="Search…">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dev-transactions-content">
+                <div class="headline">Новые</div>
+                <div class="row-title">
+                    <div class="date">
+                      дата
+                      <input type="checkbox" id="transactions-date1">
+                      <label for="transactions-date1" class="arrows"></label>
+                    </div>
+                    <div class="summa">сумма, валюта и кошелёк</div>
+                    <div class="user">пользователь
+                      <input type="checkbox" id="transactions-user1">
+                      <label for="transactions-user1" class="arrows"></label>
+                    </div>
+                </div>
+                <!-- /.row-title -->
+                <div class="row-transactions_item">
+                    <div class="date">31 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button class="js-show-modal">Открыть</button>
+                    </div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">25 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button>Открыть</button>
+                    </div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">21 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button>Открыть</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dev-transactions-content">
+                <div class="headline">В работе</div>
+                <div class="row-title">
+                    <div class="date">
+                      дата
+                      <input type="checkbox" id="transactions-date2">
+                      <label for="transactions-date2" class="arrows"></label>
+                    </div>
+                    <div class="summa">сумма, валюта и кошелёк</div>
+                    <div class="user">пользователь
+                      <input type="checkbox" id="transactions-user2">
+                      <label for="transactions-user2" class="arrows"></label>
+                    </div>
+                </div>
+                <!-- /.row-title -->
+                <div class="row-transactions_item">
+                    <div class="date">31 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button class="js-show-modal-second">Открыть</button>
+                    </div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">25 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button class="js-show-modal-third">Открыть</button>
+                    </div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">21 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="open">
+                      <button class="js-show-modal-fourth">Открыть</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dev-transactions-content">
+                <div class="headline headline--filters">
+                  <span>История транзакций</span>
+                  <div class="top-items">
+                      <ul>
+                          <li><a href="#" class="active">Все</a></li>
+                          <li><a href="#">Подтвержденные</a></li>
+                          <li><a href="#">Отклоненные</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="row-title">
+                    <div class="date">
+                      дата
+                      <input type="checkbox" id="transactions-date3">
+                      <label for="transactions-date3" class="arrows"></label>
+                    </div>
+                    <div class="summa">сумма, валюта и кошелёк</div>
+                    <div class="user">пользователь
+                      <input type="checkbox" id="transactions-user3">
+                      <label for="transactions-user3" class="arrows"></label>
+                    </div>
+                    <div class="status">
+                      статус
+                      <input type="checkbox" id="transactions-state">
+                      <label for="transactions-state" class="arrows"></label>
+                    </div>
+                </div>
+                <!-- /.row-title -->
+                <div class="row-transactions_item">
+                    <div class="date">31 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status">подтверждено</div>
+                    <div class="togl-info"></div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">25 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status">подтверждено</div>
+                    <div class="togl-info"></div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">21 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status status--denied">отклонено</div>
+                    <div class="togl-info"></div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">31 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status status--denied">отклонено</div>
+                    <div class="togl-info"></div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">25 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status">подтверждено</div>
+                    <div class="togl-info"></div>
+                </div>
+                <div class="row-transactions_item">
+                    <div class="date">21 мая 14:01</div>
+                    <div class="summa">+0,00162232 ETH → UZRSgOVF5toIHUmaMhgZoVC2Osvgxg4xOg</div>
+                    <div class="user">daphney.klocko@pierce.ca</div>
+                    <div class="status status--denied">отклонено</div>
+                    <div class="togl-info"></div>
+                </div>
+            </div>
+            <!-- /.dev-transactions-content -->
+            <div class="pagination">
+                <a href="#" class="pagination-item active">1</a>
+                <a href="#" class="pagination-item">2</a>
+                <a href="#" class="pagination-item">3</a>
+                <a href="#" class="pagination-item more">...</a>
+                <a href="#" class="pagination-item">100</a>
+
+            </div>
+        </div>
+        <!-- /.transactions-content -->
+    </div>
+    <!-- /.container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
