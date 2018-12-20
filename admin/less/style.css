@@ -341,16 +341,22 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 10px;
   font-weight: 400;
   color: #0e152b;
 }
 .miners-content .dev-miners-content .row-title .serial-number {
-  width: 170px;
+  width: 115px;
+  margin-right: 10px;
+}
+.miners-content .dev-miners-content .row-title .id-miner {
+  width: 110px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-title .model {
-  width: 150px;
+  width: 90px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-title .model .arrows {
   position: relative;
@@ -395,8 +401,13 @@ body {
   border-bottom: 10px solid #2696ff;
   border-width: 4px 3px;
 }
+.miners-content .dev-miners-content .row-title .id-user {
+  margin-right: 10px;
+  width: 80px;
+}
 .miners-content .dev-miners-content .row-title .pool {
-  width: 160px;
+  width: 85px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-title .pool .arrows {
   position: relative;
@@ -442,10 +453,12 @@ body {
   border-width: 4px 3px;
 }
 .miners-content .dev-miners-content .row-title .data-state {
-  width: 240px;
+  width: 210px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-title .error {
-  width: 130px;
+  width: 105px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-title .error .arrows {
   position: relative;
@@ -543,22 +556,34 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   color: #0e152b;
   margin-bottom: 15px;
 }
 .miners-content .dev-miners-content .row-miners_item .serial-number_item {
-  width: 170px;
+  width: 115px;
+  margin-right: 10px;
+}
+.miners-content .dev-miners-content .row-miners_item .id_item {
+  width: 110px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-miners_item .model_item {
-  width: 150px;
+  width: 90px;
+  margin-right: 10px;
+}
+.miners-content .dev-miners-content .row-miners_item .id-user_item {
+  width: 80px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-miners_item .pool_item {
-  width: 160px;
+  width: 85px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-miners_item .data-state_item {
-  width: 240px;
+  width: 210px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -582,10 +607,11 @@ body {
   padding: 2px 5px;
 }
 .miners-content .dev-miners-content .row-miners_item .error_item {
-  width: 130px;
+  width: 100px;
+  margin-right: 10px;
 }
 .miners-content .dev-miners-content .row-miners_item .status-long_item {
-  width: 202px;
+  width: 190px;
   display: flex;
   flex-direction: row;
   font-size: 13px;
@@ -630,23 +656,32 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   color: #0e152b;
   padding: 15px 15px;
   border-bottom: 1px solid #f3f4f5;
 }
 .miners-content .modal-info .row-miners_item .serial-number_item {
-  width: 170px;
+  width: 115px;
+}
+.miners-content .modal-info .row-miners_item .id_item {
+  width: 110px;
+  margin-right: 10px;
 }
 .miners-content .modal-info .row-miners_item .model_item {
-  width: 150px;
+  width: 90px;
+}
+.miners-content .modal-info .row-miners_item .id-user_item {
+  width: 80px;
+  margin-right: 10px;
 }
 .miners-content .modal-info .row-miners_item .pool_item {
-  width: 160px;
+  width: 85px;
 }
 .miners-content .modal-info .row-miners_item .data-state_item {
-  width: 240px;
+  width: 210px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -670,10 +705,11 @@ body {
   padding: 2px 5px;
 }
 .miners-content .modal-info .row-miners_item .error_item {
-  width: 130px;
+  width: 100px;
+  margin-right: 10px;
 }
 .miners-content .modal-info .row-miners_item .status-long_item {
-  width: 202px;
+  width: 190px;
   display: flex;
   flex-direction: row;
   font-size: 13px;
@@ -2591,7 +2627,6 @@ body {
 .stages .stage--refuse .dots {
   display: none;
 }
-
 .tariff-pricing {
   padding-left: 22px;
 }
@@ -2612,4 +2647,410 @@ body {
   line-height: 16px;
   color: #68718d;
   padding-left: 10px;
+}
+.modal-enter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.modal-enter .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter .modal-content .btn[placeholder] {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 13px;
+  color: #0E152B;
+}
+.modal-enter .modal-content .email {
+  margin-bottom: 12px;
+}
+.modal-enter .modal-content .email .email-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter .modal-content .email .btn-email {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter .modal-content .password {
+  margin-bottom: 32px;
+}
+.modal-enter .modal-content .password .btn-password[placeholder] {
+  font-size: 13px;
+}
+.modal-enter .modal-content .password .password-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter .modal-content .password .btn-password {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.modal-enter .modal-content .restore-password {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 12px;
+  font-size: 11px;
+  text-align: center;
+  color: #2696FF;
+}
+.modal-enter1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.modal-enter1 .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter1 .modal-content .btn[placeholder] {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 13px;
+  color: #0E152B;
+}
+.modal-enter1 .modal-content .email {
+  margin-bottom: 12px;
+}
+.modal-enter1 .modal-content .email .email-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter1 .modal-content .email .btn-email {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter1 .modal-content .password {
+  margin-bottom: 12px;
+}
+.modal-enter1 .modal-content .password .password-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter1 .modal-content .password .btn-password {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter1 .modal-content .password .btn-password[placeholder] {
+  font-size: 13px;
+}
+.modal-enter1 .modal-content .name {
+  margin-bottom: 32px;
+}
+.modal-enter1 .modal-content .name .password-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter1 .modal-content .name .btn-password {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter1 .modal-content .name .btn-password[placeholder] {
+  font-size: 13px;
+}
+.modal-enter1 .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+.modal-enter2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.modal-enter2 .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter2 .modal-content .btn[placeholder] {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 13px;
+  color: #0E152B;
+}
+.modal-enter2 .modal-content .email {
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+.modal-enter2 .modal-content .email .email-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter2 .modal-content .email .btn-email {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter2 .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+.modal-enter2 .modal-content .btn-text {
+  width: 100%;
+  text-align: center;
+}
+.modal-enter2 .modal-content .btn-text .red {
+  display: block;
+  font-weight: 300;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  color: #F87493;
+}
+.modal-enter2 .modal-content .btn-text .btn-create {
+  display: block;
+  font-weight: 300;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  color: #2696FF;
+  text-decoration: none;
+}
+.modal-enter3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.modal-enter3 .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter3 .modal-content .btn[placeholder] {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 13px;
+  color: #0E152B;
+}
+.modal-enter3 .modal-content .password {
+  margin-bottom: 5px;
+}
+.modal-enter3 .modal-content .password .password-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter3 .modal-content .password .btn-password {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter3 .modal-content .password .btn-password[placeholder] {
+  font-size: 13px;
+}
+.modal-enter3 .modal-content .rules {
+  margin-bottom: 16px;
+}
+.modal-enter3 .modal-content .rules li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+}
+.modal-enter3 .modal-content .code {
+  margin-bottom: 24px;
+}
+.modal-enter3 .modal-content .code .password-title {
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+  font-style: normal;
+}
+.modal-enter3 .modal-content .code .btn-password {
+  width: 272px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #C2D6E8;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.modal-enter3 .modal-content .code .btn-password[placeholder] {
+  font-size: 13px;
+}
+.modal-enter3 .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+.modal-enter3 .modal-content .btn-text .red {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+  color: #F87493;
+}
+.modal-enter4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.modal-enter4 .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter4 .modal-content .text {
+  margin-bottom: 28px;
+}
+.modal-enter4 .modal-content .text .title {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 15px;
+  color: #0E152B;
+}
+.modal-enter4 .modal-content .text p {
+  font-weight: 300;
+  line-height: 16px;
+  font-size: 11px;
+  color: #0E152B;
+}
+.modal-enter4 .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.modal-enter5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.modal-enter5 .modal-content {
+  display: block;
+  max-width: 272px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-enter5 .modal-content .title {
+  font-weight: 600;
+  line-height: 12px;
+  font-size: 15px;
+  color: #0E152B;
+  margin-bottom: 20px;
+}
+.modal-enter5 .modal-content .btn-enter {
+  width: 272px;
+  height: 32px;
+  background: #2696FF;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
 }

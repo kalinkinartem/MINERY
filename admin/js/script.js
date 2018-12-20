@@ -74,29 +74,30 @@ $(document).ready(function() {
         }
     });
     
-    if (miners !== undefined) {
-    	var q = 0;
-    	$.each( miners, function( key, value ) {
-			if (key == 'obsl') {
-				$('.dropdown').append('<div class="list obsl"><div class="title">На обслуживании</div><table class="table"></table></div>');
-			}
-			if (key == 'other') {
-				$('.dropdown').append('<div class="list other"><div class="title">Другие</div><table class="table"></table></div>');		  	
-			}
-			// array in value
-			$.each( value, function( key2, value2 ) {
-				// obj in value2
-				var checked = '';
-				if (value2.selected) {
-					checked = 'checked';
-					$('#prettyinput input').before('<span class="asic" data-id="'+value2.id+'">' + value2.id + '</span>');
-				}
-				$('.'+key+' table').append('<tr data-id="'+value2.id.toLowerCase()+'"><td><div class="checkbox"><input data-id="'+value2.id+'" class="checkbox__input" name="m'+q+'" id="m'+q+'" type="checkbox" '+checked+'><label for="m'+q+'"></label></div>'+value2.id+'</td><td>'+value2.type+'</td><td>'+value2.currency+'</td><td>'+value2.performance+'</td><td>'+value2.temperature+'</td><td><div class="temperature"><span class="text">'+value2.fan+'</span><span class="fan-icon"></span></div></td></tr>');
-				q = q+1;
-			});
+  //  if (miners !== undefined) {
+  //  	var q = 0;
+  //  	$.each( miners, function( key, value ) {
+		// 	if (key == 'obsl') {
+		// 		$('.dropdown').append('<div class="list obsl"><div class="title">На обслуживании</div><table class="table"></table></div>');
+		// 	}
+		// 	if (key == 'other') {
+		// 		$('.dropdown').append('<div class="list other"><div class="title">Другие</div><table class="table"></table></div>');		  	
+		// 	}
+		// 	// array in value
+		// 	$.each( value, function( key2, value2 ) {
+		// 		// obj in value2
+		// 		var checked = '';
+		// 		if (value2.selected) {
+		// 			checked = 'checked';
+		// 			$('#prettyinput input').before('<span class="asic" data-id="'+value2.id+'">' + value2.id + '</span>');
+		// 		}
+		// 		$('.'+key+' table').append('<tr data-id="'+value2.id.toLowerCase()+'"><td><div class="checkbox"><input data-id="'+value2.id+'" class="checkbox__input" name="m'+q+'" id="m'+q+'" type="checkbox" '+checked+'><label for="m'+q+'"></label></div>'+value2.id+'</td><td>'+value2.type+'</td><td>'+value2.currency+'</td><td>'+value2.performance+'</td><td>'+value2.temperature+'</td><td><div class="temperature"><span class="text">'+value2.fan+'</span><span class="fan-icon"></span></div></td></tr>');
+		// 		q = q+1;
+		// 	});
 			
-		});
-    }
+		// });
+  //  }
+    
     $(".dropdown .checkbox__input").change(function() {
     	$('#prettyinput input').val('');
     	$('.dropdown tr').removeClass('hidden');
@@ -267,7 +268,7 @@ var myDoughnutChart1 = document.getElementById('myDoughnutChart1').getContext("2
 var startMyDoughnutChart1 = new Chart(myDoughnutChart1, {
     type: 'doughnut',
     data: {
-      labels: ["3000 Работают", "2500 Готовы к продаже", "400 На обслуживании", "250 Нужно настроить", "180 Выключены"],
+      labels: ["3000 Working", "2500 Ready for sale", "400 Under maintenance", "250 Require configuration", "180 Disabled"],
       datasets: [
         {
           label: "Population (millions)",
@@ -295,7 +296,7 @@ var myDoughnutChart2 = document.getElementById('myDoughnutChart2').getContext("2
 var startMyDoughnutChart2 = new Chart(myDoughnutChart2, {
     type: 'doughnut',
     data: {
-      labels: ["12 Перегрев", "12 Низкий хэшрейт", "5 Другие ошибки"],
+      labels: ["12 Overheat", "12 Lowhashrate", "5 Other errors"],
       datasets: [
         {
           label: "Population (millions)",
@@ -521,9 +522,10 @@ $('#status-long-stateInput').change(function(e) {
 // 	modal_info.className = 'modal-info hidden';
 // }
 
-/* Всплывашка майнеры*/
+/* Всплывашка Mayнеры*/
 $(document).ready(function() {
-	$('.togl-info').click(function(e){
+	$('.togl-info').on('click', function(e){
+		console.log('click');
 		const id = e.target.parentElement.dataset.id;
 		const modals = document.querySelectorAll('.modal-info');
 		for(let i = 0 ; i < modals.length; i++){
@@ -533,8 +535,14 @@ $(document).ready(function() {
 		try{
 			document.querySelector(`.modal-info_id_${id}`).className = `modal-info modal-info_id_${id}`;
 			document.querySelector(`.row_id_${id}`).style.display = 'none';
-			// ERROR
+		
 		} catch(err){}
 	});	
+	
+	
+	
+	
+	
+	
 });
 

@@ -17,57 +17,57 @@
     <div class="header">
       <div class="header__inner header__inner--relative">
         <div class="back svg-back"></div>
-        <h1 class="page-title page-title--centered">Настройки майнеров</h1>
+        <h1 class="page-title page-title--centered">Miners settings</h1>
       </div>
     </div>
     
     <div class="screen">
       <ul class="sidebar">
-        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Панель управления</a></li>
-        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Транзакции и вывод</a></li>
-        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Аренда, деньги и услуги</a></li>
-        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Майнеры</a></li>
-        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Уведомления</a></li>
+        <li class="sidebar__item"><a href="dashboard.html" class="link sidebar__link">Dashboard</a></li>
+        <li class="sidebar__item"><a href="withdraw-DC.html" class="link sidebar__link">Transactions and withdrawal</a></li>
+        <li class="sidebar__item"><a href="money.html" class="link sidebar__link">Rent, money, and services</a></li>
+        <li class="sidebar__item"><a href="miners.html" class="link sidebar__link">Miners</a></li>
+        <li class="sidebar__item"><a href="notifications.html" class="link sidebar__link">Notifications</a></li>
       </ul>
       <div class="main">
         <div class="power-config">
           <div class="power-config__inner">
-            <h2 class="section-title power-config__title">Питание</h2>
+            <h2 class="section-title power-config__title">Power supply</h2>
             <div class="radio-pack">
               <div class="radio-pack__bind">
                 <div class="radio radio-pack__radio">
                   <input type="radio" class="radio__input" name="power-config" value="nochange-power" id="nochange-power">
                   <label for="nochange-power"></label>
                 </div>
-                <label class="radio-pack__label" for="nochange-power">не менять</label>
+                <label class="radio-pack__label" for="nochange-power">exit without changes</label>
               </div>
               <div class="radio-pack__bind">
                 <div class="radio radio-pack__radio">
                   <input type="radio" class="radio__input" name="power-config" value="on" id="on">
                   <label for="on"></label>
                 </div>
-                <label class="radio-pack__label" for="on">включить</label>
+                <label class="radio-pack__label" for="on">turn on</label>
               </div>
               <div class="radio-pack__bind">
                 <div class="radio radio-pack__radio">
                   <input type="radio" class="radio__input" name="power-config" value="off" id="off">
                   <label for="off"></label>
                 </div>
-                <label class="radio-pack__label" for="off">выключить</label>
+                <label class="radio-pack__label" for="off">shut down</label>
               </div>
             </div>
           </div>
         </div>
         <div class="pool-config">
           <div class="pool-config__inner">
-            <h2 class="section-title pool-config__title">Настройки пула</h2>
+            <h2 class="section-title pool-config__title">Pool settings</h2>
             <div class="radio-pack pool-config__radio-pack">
               <div class="radio-pack__bind">
                 <div class="radio radio-pack__radio">
                   <input type="radio" class="radio__input" name="pool-config" value="nochange-pool" id="nochange-pool">
                   <label for="nochange-pool"></label>
                 </div>
-                <label class="radio-pack__label" for="nochange-pool">не менять</label>
+                <label class="radio-pack__label" for="nochange-pool">exit without changes</label>
               </div>
               <div class="radio-pack__bind">
                 <div class="radio radio-pack__radio">
@@ -81,32 +81,31 @@
                   <input type="radio" class="radio__input" name="pool-config" value="own" id="own">
                   <label for="own"></label>
                 </div>
-                <label class="radio-pack__label" for="own">свой</label>
+                <label class="radio-pack__label" for="own">own</label>
               </div>
             </div>
             <div class="inputs pool-config__inputs">
               <div class="inputs__bind">
-                <div class="inputs__title">Пул</div>
+                <div class="inputs__title">Pool</div>
                 <input type="text" class="input inputs__input" placeholder="разные значения">
               </div>
               <div class="inputs__bind">
-                <div class="inputs__title">Воркер</div>
+                <div class="inputs__title">Worker</div>
                 <input type="text" class="input inputs__input" placeholder="разные значения">
               </div>
               <div class="inputs__bind">
-                <div class="inputs__title">Пароль</div>
+                <div class="inputs__title">Password</div>
                 <input type="password" class="input inputs__input">
               </div>
             </div>
             <div class="pool-config__note">
-              На 2-х майнерах из 7 настройки пула не сохранятся, так как они они созданы для работы на пуле mnry.io. 
-              На нём и продолжат работать.
+              Pool settings will not be saved for[number] miners out of [number],as they are designed to work on mnry.io. They will continue work on this pool.
             </div>
           </div>
         </div>
         <div class="save-settings">
           <div class="save-settings__inner">
-            <a href="#" class="btn button button--fullwidth">Сохранить настройки</a>
+            <a href="#" class="btn button button--fullwidth">Save settings</a>
           </div>
         </div>
       </div>

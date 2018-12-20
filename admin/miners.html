@@ -21,32 +21,32 @@
       </li>
       <li>
         <a class="active" href="dashboard.html">
-          <span class="img ievents"></span> События и метрики
+          <span class="img ievents"></span>Events and metrics
         </a>
       </li>
       <li>
         <a href="miners.html">
-          <span class="img iminers"></span>Майнеры
+          <span class="img iminers"></span>Miners
         </a>
       </li>
       <li>
         <a href="transactions.html">
-          <span class="img itransactions"></span>Транзакции
+          <span class="img itransactions"></span>Transactions
         </a>
       </li>
       <li>
         <a href="bills.html">
-          <span class="img ischet"></span>Cчета и услуги
+          <span class="img ischet"></span>Accounts and services
         </a>
       </li>
       <li>
         <a href="users.html">
-           <span class="img iusers"></span>Пользо- ватели
+           <span class="img iusers"></span>Users
         </a>
       </li>
       <li>
         <a href="notifications.html">
-          <span class="img inotifications"></span>Уведом- ления
+          <span class="img inotifications"></span>Notifications
         </a>
       </li>
     </ul>
@@ -58,21 +58,21 @@
     <div class="modal">
       <div class="title-extended">
         <div class="title-top">
-          <div class="text">Настройка группы майнеров</div>
+          <div class="text">Configuring a group of miners</div>
           <div class="close close-modal"></div>
         </div>
         <div class="title-bottom">
           <div class="title-items">
             <ul>
-              <li><a href="#" class="active">Работающие 3000</a></li>
-              <li><a href="#">Выключенные 180</a></li>
-              <li><a href="#">На обслуживании 400</a></li>
-              <li><a href="#">Готовые к продаже 5000</a></li>
-              <li><a href="#">Требующие настройки 250</a></li>
+              <li><a href="#" class="active">Working 3000</a></li>
+              <li><a href="#">Disabled 180</a></li>
+              <li><a href="#">Under maintenance 400</a></li>
+              <li><a href="#">Ready for sale 5000</a></li>
+              <li><a href="#">Require configuration 250</a></li>
             </ul>
           </div>
           <select class="title-select">
-            <option value="all">Все валюты</option>
+            <option value="all">All currencies</option>
             <option value="btc">BTC</option>
             <option value="eth">ETH</option>
             <option value="ltc">LTC</option>
@@ -85,21 +85,21 @@
       <div class="content">
         <div class="table">
           <div class="titly">
-            <span class="big">3000 результатов</span>
-            <a href="#">Выделить все 3000</a>
-            <a href="#">Снять выделение со всех 3000</a>
+            <span class="big">3000 results</span>
+            <a href="#">Select all 3000</a>
+            <a href="#">Deselect all 3000</a>
           </div>
           <div class="absolute">
-            <div class="title">2999 работающих майнеров выбрано</div>
-            <button>Перейти к настройке</button>
+            <div class="title">2999 working miners selected</div>
+            <button>Proceed to settings</button>
           </div>
           <div class="tably">
             <div class="tably-row-title">
-              <div class="serial-number">Серийный номер</div>
-              <div class="model">Модель</div>
-              <div class="pool">Пул:Воркер</div>
-              <div class="data-state">Валюта, хэшрейт, t°C, вентилятор</div>
-              <div class="error">Ошибок сегодня</div>
+              <div class="serial-number">Serial number</div>
+              <div class="model">Model</div>
+              <div class="pool">Pool:Worker</div>
+              <div class="data-state">Currency, hashrate, t°C, fan</div>
+              <div class="error">Errors today</div>
             </div>
             <div class="tably-row-item">
               <div class="serial-number">
@@ -272,13 +272,13 @@
     <div class="miners-content">
       <div class="graphic-block">
         <div class="graphic-item">
-          <div class="graphic-item_title">Статус</div>
+          <div class="graphic-item_title">Status</div>
           <!-- /.graphic-item_title -->
           <canvas id="myDoughnutChart1" class="graph-canvas"  wight="110" height="110"></canvas>
         </div>
         <!-- /.graphic-item -->
         <div class="graphic-item">
-          <div class="graphic-item_title title-right">Причины сбоев</div>
+          <div class="graphic-item_title title-right">Causes of failure</div>
           <!-- /.graphic-item_title -->
           <canvas id="myDoughnutChart2" class="graph-canvas " wight="110" height="110"></canvas>
         </div>
@@ -286,16 +286,16 @@
       </div>
       <!-- /.graphic-block -->
       <div class="developments">
-        <div class="dev_title">Майнеры</div>
+        <div class="dev_title">Miners</div>
         <!-- /.dev_title -->
         <div class="dev-items">
           <ul>
-            <li><a href="#">Все майнеры</a></li>
-            <li><a href="#">Работающие</a></li>
-            <li><a href="#">Выключенные</a></li>
-            <li><a href="#">На обслуживании</a></li>
-            <li><a href="#">Готовые к продаже</a></li>
-            <li><a href="#">Требующие настройки</a></li>
+            <li><a href="#">All miners</a></li>
+            <li><a href="#">Working</a></li>
+            <li><a href="#">Disabled</a></li>
+            <li><a href="#">Under maintenance</a></li>
+            <li><a href="#">Ready for sale</a></li>
+            <li><a href="#">Require configuration</a></li>
           </ul>
         </div>
         <!-- /.dev-items -->
@@ -305,7 +305,7 @@
         <!-- /.dev-search -->
       </div>
       <!-- /.developments -->
-      <button class="tuning-miners">Настроить группу майнеров…</button>
+      <button class="tuning-miners">Configure a group of miners…</button>
       
       <!-- Модальное окно информации -->
       <!--
@@ -322,58 +322,58 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item status-pink">
-            <div class="status">нужно настроить</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">require configuration</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info togl-info-close"><img src="http://via.placeholder.com/15x15" alt=""></div>
         </div>
         
         <div class="info-block">
           <div class="info-block_options">
-            <div class="options-title">Параметры</div>
+            <div class="options-title">Parameters</div>
             <div class="options-ip">
               <div class="ip">IP:</div>
               <div class="ip-address">192.169.100.1</div>
               <div class="mac">MAC:</div>
               <div class="mac-address">60-D1-08-25-69-AE</div>
             </div>
-            <div class="miner-address">Адрес:
+            <div class="miner-address">Address:
               <div class="name-miners">miner0987 </div>
               <div class="location">/location <div class="location-item">12 </div></div>
-              <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-              <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-              <div class="place">/ Место <div class="place-item">3</div></div> 
+              <div class="rack">/Rack <div class="rack-item">4</div></div>
+              <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+              <div class="place">/ Spot <div class="place-item">3</div></div> 
             </div>
-            <div class="owner">Владелец:
+            <div class="owner">Holder:
               <div class="owner-item">lenna_champlin@hotmail.com</div>
             </div>
-            <div class="purse">Кошелёк:
+            <div class="purse">Wallet:
               <div class="purse-item">b6dRQZpldC8rgUJu</div>
             </div>
           </div>
           
           <div class="info-block_event">
-            <div class="event-title">Последние события</div>
+            <div class="event-title">Latest events</div>
             <div class="row-event">
-              <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-              <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+              <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+              <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
             </div>
             <div class="row-event">
-              <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-              <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+              <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+              <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
             </div>
             <div class="row-event">
-              <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-              <div class="col2-event">майнер настроен и готов к продаже</div>
+              <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+              <div class="col2-event">miner configured and ready for sale</div>
             </div>
-            <div class="show-all"><a href="#">посмотреть все</a></div>
+            <div class="show-all"><a href="#">view all</a></div>
           </div>
           
         </div>
         
         <div class="service-options">
-          <button class="btn-option">Настроить…</button>
-          <button class="btn-service">На обсулуживание…</button>
+          <button class="btn-option">Configure…</button>
+          <button class="btn-service">Under maintenance…</button>
         </div>
       </div>
       -->
@@ -381,21 +381,23 @@
 
       <div class="dev-miners-content">
         <div class="row-title">
-          <div class="serial-number">Серийный номер</div>
-          <div class="model">Модель
+          <div class="serial-number">Serial number</div>
+          <div class="id-miner">ID for miner</div>
+          <div class="model">Model
           <input type="checkbox" id="model-stateInput">
           <label for="model-stateInput" class="arrows"></label>
           </div>
-          <div class="pool">Пул:Воркер
+          <div class="id-user">ID for user</div>
+          <div class="pool">Pool:Worker
           <input type="checkbox" id="pool-stateInput">
           <label for="pool-stateInput" class="arrows"></label>
           </div>
-          <div class="data-state">Валюта, хэшрейт, t°C, вентилятор</div>
-          <div class="error">Ошибок сегодня
+          <div class="data-state">Currency, hashrate, t°C, fan</div>
+          <div class="error">Errors today
           <input type="checkbox" id="error-stateInput">
           <label for="error-stateInput" class="arrows"></label>
           </div>
-          <div class="status-long status-long_active">Статус и его длительность
+          <div class="status-long status-long_active">Status and its duration
           <input type="checkbox" id="status-long-stateInput">
           <label for="status-long-stateInput" class="arrows"></label>
           </div>
@@ -403,7 +405,9 @@
         <!-- /.row-title -->
         <div class="row-miners_item row_id_1" data-id="1">
           <div class="serial-number_item">&#8212;</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">BTC T9 12 Th/s</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">&#8212;</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -413,8 +417,8 @@
           </div>
           <div class="error_item">&#8212;</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -422,7 +426,9 @@
         <div class="modal-info modal-info_id_1 hidden" data-id="1">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -432,63 +438,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_2" data-id="2">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -498,8 +506,8 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -507,7 +515,9 @@
         <div class="modal-info modal-info_id_2 hidden" data-id="2">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -517,63 +527,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_3" data-id="3">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -584,8 +596,8 @@
           <div class="error_item">&#8212;</div>
           <div class="status-long_item status-green">
             <span class="status-green">
-            <div class="status">готов к продаже</div>
-            <div class="long">2 дня 15 часов</div> 
+            <div class="status">ready for sale</div>
+            <div class="long">2 days 15 hours</div> 
            </span>
           </div>
           <div class="togl-info"></div>
@@ -594,7 +606,9 @@
         <div class="modal-info modal-info_id_3 hidden" data-id="3">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -604,63 +618,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_4" data-id="4">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -670,8 +686,8 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item status-pink">
-            <div class="status">нужно настроить</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">require configuration</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -679,7 +695,9 @@
         <div class="modal-info modal-info_id_4 hidden" data-id="4">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -689,63 +707,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_5" data-id="5">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -755,8 +775,8 @@
           </div>
           <div class="error_item"><span class="pink-error">1</span></div>
           <div class="status-long_item status-pink">
-            <div class="status">на обслуживании</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">under maintenance</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -764,7 +784,9 @@
         <div class="modal-info modal-info_id_5 hidden" data-id="5">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -774,63 +796,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_6" data-id="6">
           <div class="serial-number_item">&#8212;</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">BTC T9 12 Th/s</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">&#8212;</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -840,8 +864,8 @@
           </div>
           <div class="error_item">&#8212;</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -849,7 +873,9 @@
         <div class="modal-info modal-info_id_6 hidden" data-id="6">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -859,63 +885,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_7" data-id="7">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -925,8 +953,8 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -934,7 +962,9 @@
         <div class="modal-info modal-info_id_7 hidden" data-id="7">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -944,63 +974,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_8" data-id="8">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1011,8 +1043,8 @@
           <div class="error_item">&#8212;</div>
           <div class="status-long_item status-green">
             <span class="status-green">
-            <div class="status">готов к продаже</div>
-            <div class="long">2 дня 15 часов</div> 
+            <div class="status">ready for sale</div>
+            <div class="long">2 days 15 hours</div> 
            </span>
           </div>
           <div class="togl-info"></div>
@@ -1021,7 +1053,9 @@
         <div class="modal-info modal-info_id_8 hidden" data-id="8">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1031,63 +1065,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_9" data-id="9">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1097,8 +1133,8 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item status-pink">
-            <div class="status">нужно настроить</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">require configuration</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -1106,7 +1142,9 @@
         <div class="modal-info modal-info_id_9 hidden" data-id="9">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1116,63 +1154,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_10" data-id="10">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1182,8 +1222,8 @@
           </div>
           <div class="error_item"><span class="pink-error">1</span></div>
           <div class="status-long_item status-pink">
-            <div class="status">на обслуживании</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">under maintenance</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -1191,7 +1231,9 @@
         <div class="modal-info modal-info_id_10 hidden" data-id="10">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1201,63 +1243,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_11" data-id="11">
           <div class="serial-number_item">&#8212;</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">BTC T9 12 Th/s</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">&#8212;</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1267,8 +1311,8 @@
           </div>
           <div class="error_item">&#8212;</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -1276,7 +1320,9 @@
         <div class="modal-info modal-info_id_11 hidden" data-id="11">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1286,63 +1332,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_12" data-id="12">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1352,8 +1400,8 @@
           </div>
           <div class="error_item">1</div>
           <div class="status-long_item">
-            <div class="status">работает</div>
-            <div class="long">2 дня 15 часов</div>
+            <div class="status">working</div>
+            <div class="long">2 days 15 hours</div>
           </div>
           <div class="togl-info"></div>
         </div>
@@ -1361,7 +1409,9 @@
         <div class="modal-info modal-info_id_12 hidden" data-id="12">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1371,63 +1421,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_13" data-id="13">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1438,8 +1490,8 @@
           <div class="error_item">&#8212;</div>
           <div class="status-long_item status-green">
             <span class="status-green">
-            <div class="status">готов к продаже</div>
-            <div class="long">2 дня 15 часов</div> 
+            <div class="status">ready for sale</div>
+            <div class="long">2 days 15 hours</div> 
            </span>
           </div>
           <div class="togl-info"></div>
@@ -1448,7 +1500,9 @@
         <div class="modal-info modal-info_id_13 hidden" data-id="13">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1458,63 +1512,65 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class="rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
         <div class="row-miners_item row_id_14" data-id="14">
           <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+          <div class="id_item">С3-2132-11-01-4-2</div>
           <div class="model_item">ETH L3++</div>
+          <div class="id-user_item">id270589925</div>
           <div class="pool_item">BitFury:wk532</div>
           <div class="data-state_item">
             <div class="currency">BTC</div>
@@ -1525,8 +1581,8 @@
           <div class="error_item">&#8212;</div>
           <div class="status-long_item status-green">
             <span class="status-green">
-            <div class="status">готов к продаже</div>
-            <div class="long">2 дня 15 часов</div> 
+            <div class="status">ready for sale</div>
+            <div class="long">2 days 15 hours</div> 
            </span>
           </div>
           <div class="togl-info"></div>
@@ -1535,7 +1591,9 @@
         <div class="modal-info modal-info_id_14 hidden" data-id="14">
           <div class="row-miners_item">
             <div class="serial-number_item">JN8F5I1HV46GZSHS</div>
+            <div class="id_item">С3-2132-11-01-4-2</div>
             <div class="model_item">ETH L3++</div>
+            <div class="id-user_item">id270589925</div>
             <div class="pool_item">BitFury:wk532</div>
             <div class="data-state_item">
               <div class="currency">BTC</div>
@@ -1545,73 +1603,71 @@
             </div>
             <div class="error_item">1</div>
             <div class="status-long_item status-pink">
-              <div class="status">нужно настроить</div>
-              <div class="long">2 дня 15 часов</div>
+              <div class="status">require configuration</div>
+              <div class="long">2 days 15 hours</div>
             </div>
             <div class="togl-info close-info"></div>
           </div>
           <div class="info-block">
             <div class="info-block_options">
-              <div class="options-title">Параметры</div>
+              <div class="options-title">Parameters</div>
               <div class="options-ip">
                 <div class="ip">IP:</div>
                 <div class="ip-address">192.169.100.1</div>
-                <div class="mac">MAC:</div>
-                <div class="mac-address">60-D1-08-25-69-AE</div>
+                                <div class="mac">ID:</div>
+                <div class="mac-address">id270589925</div>
               </div>
-              <div class="miner-address">Адрес:
+              <div class="miner-address">Address:
                 <div class="name-miners">miner0987 </div>
                 <div class="location">/location <div class="location-item">12 </div></div>
-                <div class="rack">/Cтойка <div class=
-                "rack-item">4</div></div>
-                <div class="shelf">/ Полка <div class="shelf-item">1</div></div>
-                <div class="place">/ Место <div class="place-item">3</div></div> 
+                <div class="rack">/Rack <div class="rack-item">4</div></div>
+                <div class="shelf">/ Shelf <div class="shelf-item">1</div></div>
+                <div class="place">/ Spot <div class="place-item">3</div></div> 
               </div>
-              <div class="owner">Владелец:
+              <div class="owner">Holder:
                 <div class="owner-item">lenna_champlin@hotmail.com</div>
               </div>
-              <div class="purse">Кошелёк:
+              <div class="purse">Wallet:
                 <div class="purse-item">b6dRQZpldC8rgUJu</div>
               </div>
             </div>
             
             <div class="info-block_event">
-              <div class="event-title">Последние события</div>
+              <div class="event-title">Latest events</div>
               <div class="row-event">
-                <div class="col1-event">2 месяца назад (10.05.2018 19:20:21)</div>
-                <div class="col2-event error-event">перегрев (90°С), отключение на 5 минут</div>
+                <div class="col1-event">2 months ago (10.05.2018 19:20:21)</div>
+                <div class="col2-event error-event">overheating (90°С), shutdown for 5 minutes</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (10.01.2018 00:00:00)</div>
-                <div class="col2-event">передано в аренду lenna_champlin@hotmail.com на год</div>
+                <div class="col1-event">6 months ago (10.01.2018 00:00:00)</div>
+                <div class="col2-event">leased for lenna_champlin@hotmail.com for a year</div>
               </div>
               <div class="row-event">
-                <div class="col1-event">6 месяцев назад (9.01.2018 00:00:00)</div>
-                <div class="col2-event">майнер настроен и готов к продаже</div>
+                <div class="col1-event">6 months ago (9.01.2018 00:00:00)</div>
+                <div class="col2-event">miner configured and ready for sale</div>
               </div>
-              <div class="show-all"><a href="#">посмотреть все</a></div>
+              <div class="show-all"><a href="#">view all</a></div>
             </div>
             
           </div>
           
           <div class="service-options">
-            <button class="btn-option">Настроить…</button>
-            <button class="btn-service">На обсулуживание…</button>
+            <button class="btn-option">Configure…</button>
+            <button class="btn-service">Under maintenance…</button>
           </div>
         </div>
         <!-- /.row-miners-item -->
       </div>
       <!-- /.dev-miners-content -->
       <div class="pagination">
-                <a href="#" class="pagination-item active">1</a>
-                <a href="#" class="pagination-item">2</a>
-                <a href="#" class="pagination-item">3</a>
-                <a href="#" class="pagination-item">4</a>
-                <a href="#" class="pagination-item">5</a>
-                <a href="#" class="pagination-item more">...</a>
-                <a href="#" class="pagination-item">100</a>
-
-            </div>
+        <a href="#" class="pagination-item active">1</a>
+        <a href="#" class="pagination-item">2</a>
+        <a href="#" class="pagination-item">3</a>
+        <a href="#" class="pagination-item">4</a>
+        <a href="#" class="pagination-item">5</a>
+        <a href="#" class="pagination-item more">...</a>
+        <a href="#" class="pagination-item">100</a>
+      </div>
     </div>
     <!-- /.miners-content -->
   </div>

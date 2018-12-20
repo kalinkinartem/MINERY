@@ -13,63 +13,64 @@
 </head>
 
 <body>
-    <div class="navbar">
-      <ul class="navbar-nav">
-        <li>
-          <a href="/" class="logo ilogo">
-          </a>
-        </li>
-        <li>
-          <a class="active" href="dashboard.html">
-            <span class="img ievents"></span> События и метрики
-          </a>
-        </li>
-        <li>
-          <a href="miners.html">
-            <span class="img iminers"></span>Майнеры
-          </a>
-        </li>
-        <li>
-          <a href="transactions.html">
-            <span class="img itransactions"></span>Транзакции
-          </a>
-        </li>
-        <li>
-          <a href="bills.html">
-            <span class="img ischet"></span>Cчета и услуги
-          </a>
-        </li>
-        <li>
-          <a href="users.html">
-             <span class="img iusers"></span>Пользо- ватели
-          </a>
-        </li>
-        <li>
-          <a href="notifications.html">
-            <span class="img inotifications"></span>Уведом- ления
-          </a>
-        </li>
-      </ul>
-      <div class="navbar-user">
-        <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+      <div class="navbar">
+        <ul class="navbar-nav">
+          <li>
+            <a href="/" class="logo ilogo">
+            </a>
+          </li>
+          <li>
+            <a class="active" href="dashboard.html">
+              <span class="img ievents"></span>Events and metrics
+            </a>
+          </li>
+          <li>
+            <a href="miners.html">
+              <span class="img iminers"></span>Miners
+            </a>
+          </li>
+          <li>
+            <a href="transactions.html">
+              <span class="img itransactions"></span>Transactions
+            </a>
+          </li>
+          <li>
+            <a href="bills.html">
+              <span class="img ischet"></span>Accounts and services
+            </a>
+          </li>
+          <li>
+            <a href="users.html">
+               <span class="img iusers"></span>Users
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html">
+              <span class="img inotifications"></span>Notifications
+            </a>
+          </li>
+        </ul>
+        <div class="navbar-user">
+          <img src="http://via.placeholder.com/38x38" alt="">Ярослав Заречный
+        </div>
       </div>
-    </div>
+
     <div class="modal-outer js-modal hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Новый счёт</div>
+            <div class="text">New account</div>
             <div class="close js-close-modal"></div>
         </div>
         <div class="content">
           <div class="input small">
               <div class="title">
-                <div class="text">Выставить счёт пользователю</div>
+                <div class="text">Issue an invoice to user</div>
               </div>
               <input type="text" placeholder="Начните вводить имя"/>
           </div>
           <div class="select-advanced">
             <div class="title">
-              За майнер
+              For miner
             </div>
             <script type="text/javascript">
               var miners = {
@@ -134,36 +135,36 @@
               };
             </script>
             <div id="prettyinput">
-              <input type="text" placeholder="Выберите майнер или несколько…">
+              <input type="text" placeholder="Select oneor moreminers…">
             </div>
             <div class="dropdown hidden">
 
             </div>
-            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+            <div class="note">Miners to be shut down and serviced</div>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Заголовок</div>
+                <div class="text">Header</div>
                 <div class="symbols"><span class="count">0</span>/60</div>
               </div>
               <input type="text"/>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Детали и описание</div>
+                <div class="text">Details and description</div>
                 <div class="symbols"><span class="count">0</span>/280</div>
               </div>  
               <textarea></textarea>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Сумма к оплате</div>
+                <div class="text">Amount payable</div>
               </div>
               <input type="text"/>
           </div>
           <div class="actions">
-            <button>Выставить счет</button>
-            <!--a href="#" class="delete">Удалить счёт</a-->
+            <button>Issue an invoice</button>
+            <!--a href="#" class="delete">Delete account</a-->
           </div>
         </div>
       </div>
@@ -172,7 +173,7 @@
     <div class="modal-outer js-modal-second hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Редактировать счёт</div>
+            <div class="text">Edit account</div>
             <div class="close js-close-modal-second"></div>
         </div>
         <div class="content">
@@ -183,7 +184,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">счёт создан</div>
+              <div class="text">account created</div>
             </div>
             <div class="stage stage--accept">
               <div class="dots">
@@ -191,7 +192,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">согласие пользователя</div>
+              <div class="text">user consent</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -199,7 +200,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">в работе</div>
+              <div class="text">processed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -207,7 +208,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">работа зевершена</div>
+              <div class="text">work completed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -215,18 +216,18 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">оплата</div>
+              <div class="text">payment</div>
             </div>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Выставить счёт пользователю</div>
+                <div class="text">Issue an invoice to user</div>
               </div>
               <input type="text" value="ivan@gmail.com"/>
           </div>
           <div class="select-advanced">
             <div class="title">
-              За майнер
+              For miner
             </div>
             <script type="text/javascript">
               var miners = {
@@ -291,36 +292,36 @@
               };
             </script>
             <div id="prettyinput">
-              <input type="text" placeholder="Выберите майнер или несколько…">
+              <input type="text" placeholder="Select oneor moreminers…">
             </div>
             <div class="dropdown hidden">
 
             </div>
-            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+            <div class="note">Miners to be shut down and serviced</div>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Заголовок</div>
+                <div class="text">Header</div>
                 <div class="symbols"><span class="count">0</span>/60</div>
               </div>
-              <input type="text"/ value="Замена кулера">
+              <input type="text"/ value="Cooler replacement">
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Детали и описание</div>
+                <div class="text">Details and description</div>
                 <div class="symbols"><span class="count">0</span>/280</div>
               </div>  
-              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+              <textarea>Mayнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Сумма к оплате</div>
+                <div class="text">Amount payable</div>
               </div>
               <input type="text"/ value="500">
           </div>
           <div class="actions">
-            <!--<button>Выставить счет</button>-->
-            <button class="red-bordered">Удалить счёт</button>
+            <!--<button>Issue an invoice</button>-->
+            <button class="red-bordered">Delete account</button>
           </div>
         </div>
       </div>
@@ -329,7 +330,7 @@
     <div class="modal-outer js-modal-third hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Редактировать счёт</div>
+            <div class="text">Edit account</div>
             <div class="close js-close-modal-third"></div>
         </div>
         <div class="content">
@@ -340,7 +341,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">счёт создан</div>
+              <div class="text">account created</div>
             </div>
             <div class="stage stage--refuse">
               <div class="dots">
@@ -348,9 +349,9 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">согласие пользователя</div>
+              <div class="text">user consent</div>
               <div class="bubble">
-                <div class="title">Комментарий пользователя:</div>
+                <div class="title">User comment:</div>
                 <div class="comment">Слишком дорого.</div>
               </div>
             </div>
@@ -360,7 +361,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">в работе</div>
+              <div class="text">processed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -368,7 +369,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">работа зевершена</div>
+              <div class="text">work completed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -376,18 +377,18 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">оплата</div>
+              <div class="text">payment</div>
             </div>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Выставить счёт пользователю</div>
+                <div class="text">Issue an invoice to user</div>
               </div>
               <input type="text" value="ivan@gmail.com"/>
           </div>
           <div class="select-advanced">
             <div class="title">
-              За майнер
+              For miner
             </div>
             <script type="text/javascript">
               var miners = {
@@ -452,36 +453,36 @@
               };
             </script>
             <div id="prettyinput">
-              <input type="text" placeholder="Выберите майнер или несколько…">
+              <input type="text" placeholder="Select oneor moreminers…">
             </div>
             <div class="dropdown hidden">
 
             </div>
-            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+            <div class="note">Miners to be shut down and serviced</div>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Заголовок</div>
+                <div class="text">Header</div>
                 <div class="symbols"><span class="count">0</span>/60</div>
               </div>
-              <input type="text"/ value="Замена кулера">
+              <input type="text"/ value="Cooler replacement">
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Детали и описание</div>
+                <div class="text">Details and description</div>
                 <div class="symbols"><span class="count">0</span>/280</div>
               </div>  
-              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+              <textarea>Mayнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Сумма к оплате</div>
+                <div class="text">Amount payable</div>
               </div>
               <input type="text"/ value="500">
           </div>
           <div class="actions">
-            <!--<button>Выставить счет</button>-->
-            <button class="red-bordered">Удалить счёт</button>
+            <!--<button>Issue an invoice</button>-->
+            <button class="red-bordered">Delete account</button>
           </div>
         </div>
       </div>
@@ -490,7 +491,7 @@
     <div class="modal-outer js-modal-fourth hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Редактировать счёт</div>
+            <div class="text">Edit account</div>
             <div class="close js-close-modal-fourth"></div>
         </div>
         <div class="content">
@@ -501,7 +502,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">счёт создан</div>
+              <div class="text">account created</div>
             </div>
             <div class="stage stage--done">
               <div class="dots">
@@ -509,9 +510,9 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">согласие пользователя</div>
+              <div class="text">user consent</div>
               <!--<div class="bubble">
-                <div class="title">Комментарий пользователя:</div>
+                <div class="title">User comment:</div>
                 <div class="comment">Слишком дорого.</div>
               </div>-->
             </div>
@@ -521,7 +522,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">в работе</div>
+              <div class="text">processed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -529,7 +530,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">работа зевершена</div>
+              <div class="text">work completed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -537,18 +538,18 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">оплата</div>
+              <div class="text">payment</div>
             </div>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Выставить счёт пользователю</div>
+                <div class="text">Issue an invoice to user</div>
               </div>
               <input type="text" value="ivan@gmail.com"/>
           </div>
           <div class="select-advanced">
             <div class="title">
-              За майнер
+              For miner
             </div>
             <script type="text/javascript">
               var miners = {
@@ -613,36 +614,36 @@
               };
             </script>
             <div id="prettyinput">
-              <input type="text" placeholder="Выберите майнер или несколько…">
+              <input type="text" placeholder="Select oneor moreminers…">
             </div>
             <div class="dropdown hidden">
 
             </div>
-            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+            <div class="note">Miners to be shut down and serviced</div>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Заголовок</div>
+                <div class="text">Header</div>
                 <div class="symbols"><span class="count">0</span>/60</div>
               </div>
-              <input type="text"/ value="Замена кулера">
+              <input type="text"/ value="Cooler replacement">
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Детали и описание</div>
+                <div class="text">Details and description</div>
                 <div class="symbols"><span class="count">0</span>/280</div>
               </div>  
-              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+              <textarea>Mayнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Сумма к оплате</div>
+                <div class="text">Amount payable</div>
               </div>
               <input type="text"/ value="500">
           </div>
           <div class="actions">
-            <button>Завершить работу</button>
-            <button class="red-bordered">Удалить счёт</button>
+            <button>Shut down</button>
+            <button class="red-bordered">Delete account</button>
           </div>
         </div>
       </div>
@@ -651,7 +652,7 @@
     <div class="modal-outer js-modal-fifth hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Редактировать счёт</div>
+            <div class="text">Edit account</div>
             <div class="close js-close-modal-fifth"></div>
         </div>
         <div class="content">
@@ -662,7 +663,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">счёт создан</div>
+              <div class="text">account created</div>
             </div>
             <div class="stage stage--done">
               <div class="dots">
@@ -670,9 +671,9 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">согласие пользователя</div>
+              <div class="text">user consent</div>
               <!--<div class="bubble">
-                <div class="title">Комментарий пользователя:</div>
+                <div class="title">User comment:</div>
                 <div class="comment">Слишком дорого.</div>
               </div>-->
             </div>
@@ -682,7 +683,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">в работе</div>
+              <div class="text">processed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -690,7 +691,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">работа зевершена</div>
+              <div class="text">work completed</div>
             </div>
             <div class="stage">
               <div class="dots">
@@ -698,18 +699,18 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <div class="text">оплата</div>
+              <div class="text">payment</div>
             </div>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Выставить счёт пользователю</div>
+                <div class="text">Issue an invoice to user</div>
               </div>
               <input type="text" value="ivan@gmail.com"/>
           </div>
           <div class="select-advanced">
             <div class="title">
-              За майнер
+              For miner
             </div>
             <script type="text/javascript">
               var miners = {
@@ -774,30 +775,30 @@
               };
             </script>
             <div id="prettyinput">
-              <input type="text" placeholder="Выберите майнер или несколько…">
+              <input type="text" placeholder="Select oneor moreminers…">
             </div>
             <div class="dropdown hidden">
 
             </div>
-            <div class="note">Майнеры будут выключены и переведены на обслуживание</div>
+            <div class="note">Miners to be shut down and serviced</div>
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Заголовок</div>
+                <div class="text">Header</div>
                 <div class="symbols"><span class="count">0</span>/60</div>
               </div>
-              <input type="text"/ value="Замена кулера">
+              <input type="text"/ value="Cooler replacement">
           </div>
           <div class="input">
               <div class="title">
-                <div class="text">Детали и описание</div>
+                <div class="text">Details and description</div>
                 <div class="symbols"><span class="count">0</span>/280</div>
               </div>  
-              <textarea>Майнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
+              <textarea>Mayнер отключался из-за перегрева каждый день в течение последних двух недель.</textarea>
           </div>
           <div class="input small">
               <div class="title">
-                <div class="text">Сумма к оплате</div>
+                <div class="text">Amount payable</div>
               </div>
               <input type="text"/ value="500">
           </div>
@@ -805,9 +806,9 @@
             <button class="bordered">Изменить решение </button>
             <div class="note">
               Оборудование включится,
-              у пользователя спишется оплата.
+              у пользователя спишется payment.
             </div>
-            <button>Завершить работу</button>
+            <button>Shut down</button>
           </div>
         </div>
       </div>
@@ -816,13 +817,13 @@
     <div class="container">
         <div class="bills-content">
             <div class="top-filters">
-                <div class="top_title">Счета и услуги</div>
+                <div class="top_title">Accounts and services</div>
                 <div class="top-right">
                     <div class="top-items">
                         <ul>
-                            <li><a href="#" class="active">Все</a></li>
-                            <li><a href="#">Неоплаченные</a></li>
-                            <li><a href="#">Оплаченные</a></li>
+                            <li><a href="#" class="active">All</a></li>
+                            <li><a href="#">Unpaid</a></li>
+                            <li><a href="#">Paid</a></li>
                         </ul>
                     </div>
                     <div class="top-search">
@@ -830,42 +831,42 @@
                     </div>
                 </div>
             </div>
-            <button class="top-button js-show-modal">Выставить счет…</button>
+            <button class="top-button js-show-modal">Issue an invoice…</button>
             <div class="dev-bills-content">
                 <div class="row-title">
-                    <div class="name">Услуга</div>
-                    <div class="for">для пользователя</div>
-                    <div class="summa">на сумму</div>
-                    <div class="status">статус</div>
+                    <div class="name">Service</div>
+                    <div class="for">for user</div>
+                    <div class="summa">for the amount of</div>
+                    <div class="status">status</div>
                     <div class="actions"></div>
                 </div>
                 <!-- /.row-title -->
                 <div class="row-bills_item">
-                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="name">Cooler replacement и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
                     <div class="for">jennie_keebler@bernardo.biz</div>
                     <div class="summa">72687 <span class="rub">P</span></div>
-                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="status">pending payment since 19 June 2018</div>
                     <div class="actions"><a href="#" class="edit js-show-modal-second"></a></div>
                 </div>
                 <div class="row-bills_item">
-                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="name">Cooler replacement и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
                     <div class="for">jennie_keebler@bernardo.biz</div>
                     <div class="summa">72687 <span class="rub">P</span></div>
-                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="status">pending payment since 19 June 2018</div>
                     <div class="actions"><a href="#" class="edit js-show-modal-third"></a></div>
                 </div>
                 <div class="row-bills_item">
-                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="name">Cooler replacement и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
                     <div class="for">jennie_keebler@bernardo.biz</div>
                     <div class="summa">72687 <span class="rub">P</span></div>
-                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="status">pending payment since 19 June 2018</div>
                     <div class="actions"><a href="#" class="edit js-show-modal-fourth"></a></div>
                 </div>
                 <div class="row-bills_item">
-                    <div class="name">Замена кулера и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
+                    <div class="name">Cooler replacement и тракта охлаждения на miner8999, miner 2221, miner 2882</div>
                     <div class="for">jennie_keebler@bernardo.biz</div>
                     <div class="summa">72687 <span class="rub">P</span></div>
-                    <div class="status">ожидает оплаты с 19 июн 2018</div>
+                    <div class="status">pending payment since 19 June 2018</div>
                     <div class="actions"><a href="#" class="edit js-show-modal-fifth"></a></div>
                 </div>
             </div>

@@ -21,32 +21,32 @@
         </li>
         <li>
           <a class="active" href="dashboard.html">
-            <span class="img ievents"></span> События и метрики
+            <span class="img ievents"></span>Events and metrics
           </a>
         </li>
         <li>
           <a href="miners.html">
-            <span class="img iminers"></span>Майнеры
+            <span class="img iminers"></span>Miners
           </a>
         </li>
         <li>
           <a href="transactions.html">
-            <span class="img itransactions"></span>Транзакции
+            <span class="img itransactions"></span>Transactions
           </a>
         </li>
         <li>
           <a href="bills.html">
-            <span class="img ischet"></span>Cчета и услуги
+            <span class="img ischet"></span>Accounts and services
           </a>
         </li>
         <li>
           <a href="users.html">
-             <span class="img iusers"></span>Пользо- ватели
+             <span class="img iusers"></span>Users
           </a>
         </li>
         <li>
           <a href="notifications.html">
-            <span class="img inotifications"></span>Уведом- ления
+            <span class="img inotifications"></span>Notifications
           </a>
         </li>
       </ul>
@@ -57,14 +57,14 @@
     <div class="modal-outer js-modal hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Редактирование пользователя</div>
+            <div class="text">Editing user</div>
             <div class="close js-close-modal"></div>
         </div>
         <div class="content">
-          <div class="subtitle">Регистрационные данные</div>
+          <div class="subtitle">Registration data</div>
           <div class="input nopaddingtop">
               <div class="title">
-                <div class="text">Имя</div>
+                <div class="text">Name</div>
               </div>
               <input type="text"/>
           </div>
@@ -74,15 +74,15 @@
               </div>  
               <input type="text"/>
           </div>
-          <div class="subtitle">Тип майнинга</div>
+          <div class="subtitle">Mining type</div>
           <div class="checks">
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="pool" value="own" id="own" type="radio">
                   <label for="own"></label>
                 </div>
-                <label for="own">свой пул</label>
-                <span> — пользователь сам укажет пул и воркер для каждого майнера</span>
+                <label for="own">own pool</label>
+                <span> — user specifies pool and worker for each miner</span>
               </div>
               <div class="radio-pack">
                 <div class="radio">
@@ -90,26 +90,26 @@
                   <label for="mnry"></label>
                 </div>
                 <label for="mnry">mnry.io</label>
-                <span>— всё оборудование будет майнить на пуле mnry.io</span>
+                <span>— all equipment to mine viamnry.io pool</span>
               </div>
           </div>
-          <div class="subtitle">Состояние</div>
+          <div class="subtitle">Status</div>
           <div class="checks">
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="user-config" value="user-off" id="user-off" type="radio">
                   <label for="user-off"></label>
                 </div>
-                <label for="user-off">отключен</label>
-                <span> — обычный пользователь</span>
+                <label for="user-off">disabled</label>
+                <span> — regular user</span>
               </div>
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="user-config" value="user-on" id="user-on" type="radio">
                   <label for="user-on"></label>
                 </div>
-                <label for="user-on">активен</label>
-                <span> — пользователь не сможет войти в систему, всё оборудование будет выключено</span>
+                <label for="user-on">active</label>
+                <span> — user unable to log in, all equipment shut down</span>
               </div>
           </div>
 
@@ -120,15 +120,15 @@
                         <input class="radio__input user-tariff-change" name="user-tariff" value="user-standart" id="user-standart" type="radio">
                         <label for="user-standart"></label>
                     </div>
-                    <label for="user-standart">стандартный</label>
-                    <span> — 2,4 ₽/кВт; 1 ₽/майнер/день</span>
+                    <label for="user-standart">standard</label>
+                    <span> — 2,4 ₽/кВт; 1 ₽/Mayнер/день</span>
                 </div>
                 <div class="radio-pack">
                     <div class="radio">
                         <input class="radio__input user-tariff-change" name="user-tariff" value="user-personal" id="user-personal" type="radio">
                         <label for="user-personal"></label>
                     </div>
-                    <label for="user-personal">персональный</label>
+                    <label for="user-personal">personal</label>
                     <span></span>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                 <div class="tariff-pricing__block">
                     <div class="input nopaddingtop">
                         <div class="title">
-                            <label for="user-electricity" class="text">Электричество ₽</label>
+                            <label for="user-electricity" class="text">Electricity ₽</label>
                         </div>
                         <div class="tariff-pricing__block__input">
                             <input name="user-electricity" id="user-electricity" class="">
@@ -147,21 +147,21 @@
                 <div class="tariff-pricing__block">
                     <div class="input nopaddingtop">
                         <div class="title">
-                            <label for="user-service" class="text">Обслуживание ₽</label>
+                            <label for="user-service" class="text">Service ₽</label>
                         </div>
                         <div class="tariff-pricing__block__input">
                             <input name="user-service" id="user-service" class="">
-                            <span class="tariff-pricing__block__desc"> — в день за обслуживание одного майнера</span>
+                            <span class="tariff-pricing__block__desc"> — в день за обслуживание одного Mayнера</span>
                         </div>
                     </div>
                 </div>
             </div>
 
           <div class="actions">
-            <button>Сохранить</button>
-            <button class="bordered">Сбросить пароль</button>
-            <button class="red-bordered">Удалить пользователя</button>
-            <!--<a href="#" class="delete">Удалить пользователя</a>-->
+            <button>Save</button>
+            <button class="bordered">Reset password</button>
+            <button class="red-bordered">Delete user</button>
+            <!--<a href="#" class="delete">Delete user</a>-->
           </div>
         </div>
       </div>
@@ -169,14 +169,14 @@
     <div class="modal-outer js-modal-second hidden">
       <div class="modal">
         <div class="title">
-            <div class="text">Создание пользователя</div>
+            <div class="text">Create user</div>
             <div class="close js-close-modal-second"></div>
         </div>
         <div class="content">
-          <div class="subtitle">Регистрационные данные</div>
+          <div class="subtitle">Registration data</div>
           <div class="input nopaddingtop">
               <div class="title">
-                <div class="text">Имя</div>
+                <div class="text">Name</div>
               </div>
               <input type="text"/>
           </div>
@@ -186,15 +186,15 @@
               </div>  
               <input type="text"/>
           </div>
-          <div class="subtitle">Тип майнинга</div>
+          <div class="subtitle">Mining type</div>
           <div class="checks">
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="pool2" value="own2" id="own2" type="radio">
                   <label for="own2"></label>
                 </div>
-                <label for="own2">свой пул</label>
-                <span> — пользователь сам укажет пул и воркер для каждого майнера</span>
+                <label for="own2">own pool</label>
+                <span> — user specifies pool and worker for each miner</span>
               </div>
               <div class="radio-pack">
                 <div class="radio">
@@ -202,26 +202,26 @@
                   <label for="mnry2"></label>
                 </div>
                 <label for="mnry2">mnry.io</label>
-                <span>— всё оборудование будет майнить на пуле mnry.io</span>
+                <span>— all equipment to mine viamnry.io pool</span>
               </div>
           </div>
-          <div class="subtitle">Состояние</div>
+          <div class="subtitle">Status</div>
           <div class="checks">
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="user-config2" value="user-off2" id="user-off2" type="radio">
                   <label for="user-off2"></label>
                 </div>
-                <label for="user-off2">отключен</label>
-                <span> — обычный пользователь</span>
+                <label for="user-off2">disabled</label>
+                <span> — regular user</span>
               </div>
               <div class="radio-pack">
                 <div class="radio">
                   <input class="radio__input" name="user-config2" value="user-on2" id="user-on2" type="radio">
                   <label for="user-on2"></label>
                 </div>
-                <label for="user-on2">активен</label>
-                <span> — пользователь не сможет войти в систему, всё оборудование будет выключено</span>
+                <label for="user-on2">active</label>
+                <span> — user unable to log in, all equipment shut down</span>
               </div>
           </div>
 
@@ -234,7 +234,7 @@
                         <label for="user-standart2"></label>
                     </div>
                     <label for="user-standart">стандартный</label>
-                    <span> — 2,4 ₽/кВт; 1 ₽/майнер/день</span>
+                    <span> — 2,4 ₽/кВт; 1 ₽/Mayнер/день</span>
                 </div>
                 <div class="radio-pack">
                     <div class="radio">
@@ -249,7 +249,7 @@
                 <div class="tariff-pricing__block">
                     <div class="input nopaddingtop">
                         <div class="title">
-                            <label for="user-electricity2" class="text">Электричество ₽</label>
+                            <label for="user-electricity2" class="text">Electricity ₽</label>
                         </div>
                         <div class="tariff-pricing__block__input">
                             <input name="user-electricity" id="user-electricity2" class="">
@@ -260,82 +260,82 @@
                 <div class="tariff-pricing__block">
                     <div class="input nopaddingtop">
                         <div class="title">
-                            <label for="user-service2" class="text">Обслуживание ₽</label>
+                            <label for="user-service2" class="text">Service ₽</label>
                         </div>
                         <div class="tariff-pricing__block__input">
                             <input name="user-service" id="user-service2" class="">
-                            <span class="tariff-pricing__block__desc"> — в день за обслуживание одного майнера</span>
+                            <span class="tariff-pricing__block__desc"> — в день за обслуживание одного Mayнера</span>
                         </div>
                     </div>
                 </div>
             </div>
 
           <div class="actions">
-            <button>Создать пользователя</button>
-            <span> — ему на почту придёт приглашение создать пароль и войти в аккаунт</span>
+            <button>Create user</button>
+            <span> — user will receive an invitation to create a password and enter account</span>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-        <div class="users-content">
-            <div class="top-filters">
-                <div class="top_title">Пользователи</div>
-                <div class="top-right">
-                    <div class="top-items">
-                        <ul>
-                            <li><a href="#" class="active">Все</a></li>
-                            <li><a href="#">Неподтвержденные</a></li>
-                            <li><a href="#">Подтвержденные</a></li>
-                        </ul>
-                    </div>
-                    <div class="top-search">
-                        <input type="search" placeholder="Search…">
-                    </div>
-                </div>
-            </div>
-            <button class="top-button js-show-modal-second">Создать пользовтаеля…</button>
-            <div class="dev-users-content">
-                <div class="row-users_item">
-                    <div class="name">
-                        Full name
-                        <div class="email">innokentij@konstantinopolsky.ru</div>
-                    </div>
-                    <div class="fa2">2fa включена</div>
-                    <div class="bills"><a href="#">нет счетов на оплату</a></div>
-                    <div class="miners"><a href="#">20 майнеров</a></div>
-                    <div class="balance">12,23 BTC</div>
-                    <div class="balance">12 ETH</div>
-                    <div class="balance">2 LTC</div>
-                    <div class="active">активен</div>
-                    <div class="actions"><a href="#" class="edit js-show-modal"></a></div>
-                </div>
-                <div class="row-users_item">
-                    <div class="name">
-                        Иннокентий Какой-то
-                        <div class="email">innokentij@gmail.ru</div>
-                    </div>
-                    <div class="fa2">2fa включена</div>
-                    <div class="bills"><a href="#">нет счетов на оплату</a></div>
-                    <div class="miners"><a href="#">20 майнеров</a></div>
-                    <div class="balance">0,12222 BTC</div>
-                    <div class="balance">11 ETH</div>
-                    <div class="balance">0,2 LTC</div>
-                    <div class="active not">не активен</div>
-                    <div class="actions"><a href="#" class="edit js-show-modal"></a></div>
-                </div>
-            </div>
-            <!-- /.dev-transactions-content -->
-            <div class="pagination">
-                <a href="#" class="pagination-item active">1</a>
-                <a href="#" class="pagination-item">2</a>
-                <a href="#" class="pagination-item">3</a>
-                <a href="#" class="pagination-item more">...</a>
-                <a href="#" class="pagination-item">100</a>
+      <div class="users-content">
+          <div class="top-filters">
+              <div class="top_title">Users</div>
+              <div class="top-right">
+                  <div class="top-items">
+                      <ul>
+                          <li><a href="#" class="active">All</a></li>
+                          <li><a href="#">Unconfirmed</a></li>
+                          <li><a href="#">Confirmed</a></li>
+                      </ul>
+                  </div>
+                  <div class="top-search">
+                      <input type="search" placeholder="Search…">
+                  </div>
+              </div>
+          </div>
+          <button class="top-button js-show-modal-second">Create user…</button>
+          <div class="dev-users-content">
+              <div class="row-users_item">
+                  <div class="name">
+                      Full name
+                      <div class="email">innokentij@konstantinopolsky.ru</div>
+                  </div>
+                  <div class="fa2">2fa enabled</div>
+                  <div class="bills"><a href="#">нет invoices for payment</a></div>
+                  <div class="miners"><a href="#">20 miners</a></div>
+                  <div class="balance">12,23 BTC</div>
+                  <div class="balance">12 ETH</div>
+                  <div class="balance">2 LTC</div>
+                  <div class="active">active</div>
+                  <div class="actions"><a href="#" class="edit js-show-modal"></a></div>
+              </div>
+              <div class="row-users_item">
+                  <div class="name">
+                      Иннокентий Какой-то
+                      <div class="email">innokentij@gmail.ru</div>
+                  </div>
+                  <div class="fa2">2fa enabled</div>
+                  <div class="bills"><a href="#">нет invoices for payment</a></div>
+                  <div class="miners"><a href="#">20 miners</a></div>
+                  <div class="balance">0,12222 BTC</div>
+                  <div class="balance">11 ETH</div>
+                  <div class="balance">0,2 LTC</div>
+                  <div class="active not">not active</div>
+                  <div class="actions"><a href="#" class="edit js-show-modal"></a></div>
+              </div>
+          </div>
+          <!-- /.dev-transactions-content -->
+          <div class="pagination">
+              <a href="#" class="pagination-item active">1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="pagination-item more">...</a>
+              <a href="#" class="pagination-item">100</a>
 
-            </div>
-        </div>
-        <!-- /.transactions-content -->
+          </div>
+      </div>
+      <!-- /.transactions-content -->
     </div>
     <!-- /.container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
