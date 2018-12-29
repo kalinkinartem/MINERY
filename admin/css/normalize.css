@@ -425,3 +425,26 @@ td,
 th {
   padding: 0;
 }
+.navbar .navbar-user {
+  height: 130px;
+}
+
+.language {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.language .eng, .language .rus {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.language .eng:hover, .language .rus:hover {
+  color: #2696ff;
+}
+
+.lang_active {
+  color: #2696ff;
+}
