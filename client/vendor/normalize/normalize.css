@@ -425,3 +425,29 @@ td,
 th {
   padding: 0;
 }
+
+
+.language {
+    text-align: center;
+    color: #000;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.language .eng, .language .rus {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.language .eng:hover, .language .rus:hover {
+  color: #2696ff;
+}
+
+.lang_active {
+  color: #2696ff;
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
