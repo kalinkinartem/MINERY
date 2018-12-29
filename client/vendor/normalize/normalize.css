@@ -448,6 +448,6 @@ th {
   color: #2696ff;
 }
 .menu{
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
